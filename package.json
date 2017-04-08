@@ -1,0 +1,33 @@
+{
+  "name": "waqasyousaf-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/generate-sitemap.js && vite build && node scripts/copy-404.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "docx": "^9.7.1",
+    "html2canvas": "^1.4.1",
+    "i18next": "^26.3.0",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "js-yaml": "^4.2.0",
+    "jspdf": "^4.2.1",
+    "marked": "^18.0.5",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^18.3.1",
+    "react-github-calendar": "^5.0.6",
+    "react-i18next": "^17.0.8",
+    "react-router-dom": "^7.1.1",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
+  }
+}
