@@ -1,693 +1,1632 @@
-
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Welcome to Waqas Yousaf's Homepage. I am a web developer based in Lahore. I spend my days playing with wordpress, code igniter, wide variety of key web projects and frameworks.">
-        <meta name="keywords" content="waqas, yousaf, web, developer, lahore, pakistan, wishdd">
-	    <meta name="author" content="Waqas Yousaf">
-	
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@wiqi">
-		<meta name="twitter:creator" content="@wiqi">
-		<meta name="twitter:title" content="Waqas Yousaf's Homepage">
-		<meta name="twitter:description" content="Welcome to Waqas Yousaf's Homepage. I am a web developer based in Lahore. I spend my days playing with wordpress, code igniter, wide variety of key web projects and frameworks.">
-		<meta name="twitter:image" content="https://waqas-yousaf.github.io/assets/images/waqas-yousaf-sm.jpg">
+<html lang="en" class="scroll-smooth">
 
-		<meta property="og:url"                content="http://waqas-yousaf.github.io/" />
-		<meta property="og:type"               content="article" />
-		<meta property="og:title"              content="Welcome to Waqas Yousaf's Homepage." />
-		<meta property="og:description"        content="I am a web developer based in Lahore. I spend my days playing with wordpress, code igniter, wide variety of key web projects and frameworks." />
-		<meta property="og:image"              content="https://waqas-yousaf.github.io/assets/images/waqas-yousaf-sm.jpg" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta & SEO -->
+	<meta name="description"
+		content="Waqas Yousaf - Expert Backend Developer & DevOps Engineer specializing in PHP, Laravel, and Cloud Infrastructure.">
+	<meta name="keywords"
+		content="Waqas Yousaf, PHP Developer, Laravel Developer, DevOps Engineer, Backend Developer, Random Password Generator, Web Development, Portfolio">
+	<meta name="author" content="Waqas Yousaf">
 
-		<title>Waqas Yousaf</title>
-		<link rel='stylesheet' href='assets/css/main.css'/>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://waqasyousaf.github.io/">
+	<meta property="og:title" content="Waqas Yousaf | Backend & DevOps Engineer">
+	<meta property="og:description"
+		content="Expert Backend Developer & DevOps Engineer. Check out my portfolio and developer tools.">
+	<meta property="og:image" content="https://waqasyousaf.github.io/assets/images/waqas-yousaf.jpg">
 
-		<!-- Color -->
-		<link rel='stylesheet' id='light-dark' href='assets/css/bg-light.css'/>
-		<!-- Background Color -->
-		<link rel='stylesheet' id='colors' href='assets/css/dark-green.css'/>
+	<!-- JSON-LD Schema -->
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Waqas Yousaf",
+          "jobTitle": "Backend Developer & DevOps Engineer",
+          "url": "https://waqasyousaf.github.io",
+          "sameAs": [
+            "https://github.com/waqas-yousaf",
+            "https://linkedin.com/in/waqasbiz"
+          ],
+          "knowsAbout": ["PHP", "Laravel", "DevOps", "Cloud Computing", "Web Development"]
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Developer Tools Hub",
+          "url": "https://waqasyousaf.github.io/",
+          "description": "A suite of developer utilities including Password Generator, UUID v4 Generator, Base64 Converter, and JSON Formatter.",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Any",
+          "hasPart": [
+            {
+              "@type": "WebApplication",
+              "name": "Random Password Generator",
+              "description": "Secure, customizable random password generator.",
+              "url": "https://waqasyousaf.github.io/#tool-password"
+            },
+            {
+              "@type": "WebApplication",
+              "name": "UUID v4 Generator",
+              "description": "Generate unique version 4 UUIDs.",
+              "url": "https://waqasyousaf.github.io/#tool-uuid"
+            },
+            {
+              "@type": "WebApplication",
+              "name": "Base64 Converter",
+              "description": "Encode and decode Base64 strings.",
+              "url": "https://waqasyousaf.github.io/#tool-base64"
+            },
+            {
+              "@type": "WebApplication",
+              "name": "JSON Formatter",
+              "description": "Prettify and validate JSON data.",
+              "url": "https://waqasyousaf.github.io/#tool-json"
+            },
+            {
+              "@type": "WebApplication",
+              "name": "Unix Timestamp Converter",
+              "description": "Convert between Epoch timestamps and human-readable dates.",
+              "url": "https://waqasyousaf.github.io/#tool-timestamp"
+            },
+            {
+              "@type": "WebApplication",
+              "name": "Lorem Ipsum Generator",
+              "description": "Generate placeholder text.",
+              "url": "https://waqasyousaf.github.io/#tool-lorem"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
-		<link rel='stylesheet' id='colors' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
-		<link rel='stylesheet' href='assets/css/responsive.css'/>
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/ico" href="assets/favicon.ico">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Sans+Narrow:400,700">
-<!-- Google Analytics Code -->
+	<title>Waqas Yousaf | Backend & DevOps Engineer</title>
 
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						cream: '#FAF3E1',    // Main BG
+						'cream-dark': '#F5E7C6', // Secondary BG
+						accent: '#FF6D1F',    // Borders/Highlights
+						dark: '#222222',      // Font
+						primary: '#FF6D1F',   // Mapping primary to accent for ease
+						secondary: '#444',
+					},
+					fontFamily: {
+						sans: ['Outfit', 'sans-serif'],
+					}
+				}
+			}
+		}
+	</script>
 
-  ga('create', 'UA-97069084-1', 'auto');
-  ga('send', 'pageview');
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-</script>
+	<style>
+		/* Glassmorphism Utilities - Updated for new palette */
+		.glass {
+			background: rgba(250, 243, 225, 0.6);
+			/* Cream opacity */
+			backdrop-filter: blur(12px);
+			border: 2px solid #FF6D1F;
+			/* Accent Border */
+			box-shadow: 6px 6px 0px #FF6D1F;
+			/* Accent Shadow */
+		}
 
-	</head>
-	<body>
+		.glass-nav {
+			background: rgba(250, 243, 225, 0.9);
+			backdrop-filter: blur(12px);
+			border-bottom: 2px solid #FF6D1F;
+		}
 
-		<div class="content">
-			<!-- #LOADER BY#  http://tobiasahlin.com/spinkit/ -->
-			<div class="loading-overlay">
-				<div class="spinner">
-				  <div class="rect1"></div>
-				  <div class="rect2"></div>
-				  <div class="rect3"></div>
-				  <div class="rect4"></div>
-				  <div class="rect5"></div>
+		.text-glow {
+			text-shadow: 0 0 1px rgba(255, 109, 31, 0.5);
+			/* Subtle accent glow */
+		}
+
+		.blob {
+			position: absolute;
+			filter: blur(80px);
+			z-index: -1;
+			opacity: 0.1;
+			animation: float 10s infinite ease-in-out;
+		}
+
+		@keyframes float {
+
+			0%,
+			100% {
+				transform: translate(0, 0);
+			}
+
+			50% {
+				transform: translate(20px, 30px);
+			}
+		}
+	</style>
+</head>
+
+<body class="bg-cream text-dark font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+
+	<!-- Background Blobs - Updated Colors -->
+	<div class="blob bg-orange-200 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+	<div class="blob bg-yellow-200 w-80 h-80 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3 delay-2000">
+	</div>
+
+
+
+	<!-- View: Home -->
+	<div id="view-home" class="page-view">
+		<!-- Hero Section -->
+		<section id="hero" class="min-h-[60vh] flex items-center pt-20 relative" style="margin-top: 50px;">
+			<div class="container mx-auto px-6 text-center">
+				<h1 class="text-4xl md:text-5xl font-bold text-dark mb-4">
+					<span class="text-accent text-glow">Developer Tools</span> Hub
+				</h1>
+				<p class="text-xl text-dark/70 mb-12 max-w-2xl mx-auto">
+					A collection of essential utilities for developers, secure and client-side.
+				</p>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+					<!-- Tool Link: Password -->
+					<a href="#tool-password"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-lock text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">Password Gen</h3>
+						<p class="text-sm text-dark/60 mt-2">Secure random passwords</p>
+					</a>
+
+					<!-- Tool Link: UUID -->
+					<a href="#tool-uuid"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-fingerprint text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">UUID v4</h3>
+						<p class="text-sm text-dark/60 mt-2">Generate unique IDs</p>
+					</a>
+
+					<!-- Tool Link: Slug -->
+					<a href="#tool-slug"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-link text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">Slugify</h3>
+						<p class="text-sm text-dark/60 mt-2">URL-friendly strings</p>
+					</a>
+
+					<!-- Tool Link: Laravel Key -->
+					<a href="#tool-laravel"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-brands fa-laravel text-4xl text-red-600 mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">App Key</h3>
+						<p class="text-sm text-dark/60 mt-2">Laravel Base64 keys</p>
+					</a>
+
+					<!-- Tool Link: Base64 -->
+					<a href="#tool-base64"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-code text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">Base64</h3>
+						<p class="text-sm text-dark/60 mt-2">Encode / Decode</p>
+					</a>
+
+					<!-- Tool Link: JSON -->
+					<a href="#tool-json"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-brackets-curly text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">JSON FMT</h3>
+						<p class="text-sm text-dark/60 mt-2">Prettify & Validate</p>
+					</a>
+
+					<!-- Tool Link: Timestamp -->
+					<a href="#tool-timestamp"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-clock text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">Timestamp</h3>
+						<p class="text-sm text-dark/60 mt-2">Epoch Converter</p>
+					</a>
+
+					<!-- Tool Link: Lorem -->
+					<a href="#tool-lorem"
+						class="glass p-8 rounded-2xl hover:bg-white/60 transition-all hover:-translate-y-1 group">
+						<i
+							class="fa-solid fa-paragraph text-4xl text-accent mb-4 group-hover:scale-110 transition-transform block"></i>
+						<h3 class="text-xl font-bold text-dark">Lorem Ipsum</h3>
+						<p class="text-sm text-dark/60 mt-2">Dummy Text Gen</p>
+					</a>
 				</div>
 			</div>
-			
-			<!-- #MENU# -->
-			<div class="menu">
-				<h2 class="logo">WY</h2>
-				<div class="menu-content">
-					<ul>
-						<li><a class="active" href="#" data-value="about">ABOUT</a></li>
-						<li><a href="#" data-value="skills">SKILLS</a></li>
-						<li><a href="#" data-value="education">EDUCATION</a></li>
-						<li><a href="#" data-value="experience">EXPERIENCE</a></li>
-						<li><a href="#" data-value="testimonials">TESTIMONIALS</a></li>
-						<li><a href="#" data-value="interests">INTERESTS</a></li>
-						<li><a href="#" data-value="contact-us">CONTACT ME</a></li>
-					</ul>
-				</div>
-				<div class="open-menu">
-					<i class="fa fa-bars"></i>
-				</div>
-			</div>
-		
-			<!-- #BACK-TO-TOP# -->
-			<div class="scroll-top" data-tootik="TOP" data-tootik-conf="invert no-arrow no-fading">
-				<i class="fa fa-arrow-up"></i>
-			</div>
-			<!-- #CONTAINER# -->
-			<div class="container">
-				<!-- #ABOUT# -->
-				<section id="about" class="section section-about wow fadeInUp">
-					<div class="profile">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="photo-profile">
-									<img src="assets/images/waqas-yousaf.jpg" alt="Waqas Yousaf">
-								</div>
-								<a href="https://drive.google.com/file/d/0B9MBp46Ff7GTaDBFS2dVbG5UNGE4d1AzVWtoT1lKZ3RXR0M0/view?usp=sharing" target="cv">
-									<div class="download-resume">
-										<i class="fa fa-cloud-download" aria-hidden="true"></i>
-										<span class="text-download">DOWNLOAD RESUME</span>
-									</div>
+		</section>
+
+		<!-- About Section (Now containing Introduction) -->
+		<section id="about" class="py-20 relative">
+			<!-- Separator line updated color -->
+			<div class="absolute top-0 inset-x-0 h-px bg-accent opacity-20"></div>
+
+			<div class="container mx-auto px-6">
+				<div class="glass rounded-3xl p-8 md:p-14 relative overflow-hidden bg-white/40">
+					<!-- Background Glow -->
+					<div class="absolute -top-24 -right-24 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+					<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-cream-dark/40 rounded-full blur-3xl"></div>
+
+					<div class="grid lg:grid-cols-5 gap-12 items-center relative z-10">
+						<!-- Text Content -->
+						<div class="lg:col-span-5 text-center">
+							<div
+								class="inline-block px-4 py-1.5 rounded-full bg-white border border-accent/20 text-accent text-xs font-semibold tracking-wider uppercase mb-6 shadow-sm">
+								Available for Freelance
+							</div>
+
+							<h1 class="text-4xl md:text-6xl font-bold leading-tight text-dark mb-6">
+								Hi, I'm <span class="text-accent text-glow">Waqas Yousaf</span>
+							</h1>
+
+							<p class="text-xl md:text-2xl text-dark/80 font-light mb-8 max-w-3xl mx-auto">
+								<span class="text-dark font-semibold">Backend Developer</span> &
+								<span class="text-dark font-semibold">DevOps Engineer</span>.
+								<br class="hidden md:block">
+								I specialize in designing scalable architectures, automating deployment pipelines, and
+								optimizing
+								server infrastructure. My journey started with PHP and has evolved into deep expertise
+								in
+								cloud-native technologies.
+							</p>
+
+							<div class="flex flex-wrap gap-4 justify-center mb-10">
+								<!-- Updated Button -->
+								<a href="https://wa.me/4917683081592" target="_blank"
+									class="px-8 py-3.5 bg-accent hover:bg-dark text-white rounded-full font-semibold shadow-lg shadow-accent/20 transition-all transform hover:-translate-y-1 flex items-center gap-2 border-2 border-transparent">
+									<i class="fa-brands fa-whatsapp text-xl"></i>
+									<span>Hire Me</span>
 								</a>
-								<div class="available">
-									<i class="fa fa-check" aria-hidden="true"></i>
-									<span class="text-available"><a href="https://www.freelancer.com/u/wiqi.html">Available on freelance</a></span>
-								</div>
 							</div>
-							<div class="col-sm-8">
-								<div class="info-profile">
-									<h2><span>HI I'M</span> WAQAS YOUSAF</h2>
-									<h3>Web Developer</h3>	
-									<p>I am a website developer by profession & I am thankful to play advancing and dynamic role in the professional web development industry for over the past 5 years now. I have had the best means of applying my skills in MVC and full stack development to a wide variety of key web projects and work frames.</p>
-									<div class="row">
-										<div class="col-sm-6">
-											<ul class="ul-info">
-												<li class="li-info">
-													<span class="title-info">Organization</span>
-													<span class="info"><a href="https://goo.gl/XctQav">Wish Developers & Designers</a></span>
-												</li>
-												<li class="li-info">
-													<span class="title-info">Email</span>
-													<span class="info">waqas@wishdd.com</span>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6">
-											<ul class="ul-info">
-												<li class="li-info">
-													<span class="title-info">Website</span>
-													<span class="info"><a href="http://goo.gl/O0bFzT">Waqas' Blog</a></span>
-												</li>
-												<li class="li-info">
-													<span class="title-info">Github</span>
-													<span class="info"><a href="https://goo.gl/TTS0Py">waqas-yousaf</a></span>
-												</li>
 
-											</ul>
-										</div>
-										<div class="col-sm-12">
-											<span class="title-links">Social Links</span>
-											<ul class="ul-social-links">
-												<li class="li-social-links">
-													<a href="https://goo.gl/KnHtwS" data-tootik="Facebook" data-tootik-conf="square"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://goo.gl/IQj8cX" data-tootik="Twitter" data-tootik-conf="square"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://goo.gl/sttPoC" data-tootik="Google Plus" data-tootik-conf="square"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://goo.gl/EOte5a" data-tootik="Linkedin" data-tootik-conf="square"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://goo.gl/TTS0Py" data-tootik="Github" data-tootik-conf="square"><i class="fa fa-github" aria-hidden="true"></i></a>
-												</li>
-												<li>
-													
-												</li>
-											</ul>
+							<div class="flex justify-center gap-8 text-2xl text-gray-500">
+								<a href="https://github.com/waqas-yousaf" target="_blank"
+									class="hover:text-accent transition-colors transform hover:scale-110 p-2"><i
+										class="fa-brands fa-github"></i></a>
+								<a href="https://linkedin.com/in/waqasbiz" target="_blank"
+									class="hover:text-blue-600 transition-colors transform hover:scale-110 p-2"><i
+										class="fa-brands fa-linkedin"></i></a>
+
+								<a href="mailto:waqas@wishdd.com"
+									class="hover:text-emerald-600 transition-colors transform hover:scale-110 p-2"><i
+										class="fa-solid fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="py-20 relative overflow-hidden">
+			<!-- Background decorative elements -->
+			<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+			<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+
+			<div class="container mx-auto px-6">
+				<h2 class="text-3xl font-bold mb-16 text-center text-dark">Technical <span
+						class="text-accent">Arsenal</span></h2>
+
+				<div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+					<!-- Backend Stack -->
+					<div class="glass p-8 rounded-2xl hover:bg-white/60 transition-colors">
+						<div class="flex items-center gap-4 mb-6">
+							<div class="p-3 bg-blue-500/20 rounded-lg text-blue-600">
+								<i class="fa-solid fa-code text-xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-dark">Backend Development</h3>
+						</div>
+						<div class="space-y-4">
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">PHP / Laravel / CodeIgniter</span>
+									<span class="text-sm font-medium text-accent">95%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-accent h-2 rounded-full" style="width: 95%"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">Node.js / Express</span>
+									<span class="text-sm font-medium text-accent">85%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-accent h-2 rounded-full" style="width: 85%"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">MySQL / PostgreSQL / MongoDB</span>
+									<span class="text-sm font-medium text-accent">90%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-accent h-2 rounded-full" style="width: 90%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- DevOps & Cloud -->
+					<div class="glass p-8 rounded-2xl hover:bg-white/60 transition-colors">
+						<div class="flex items-center gap-4 mb-6">
+							<div class="p-3 bg-emerald-500/20 rounded-lg text-emerald-600">
+								<i class="fa-solid fa-server text-xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-dark">DevOps & Cloud</h3>
+						</div>
+						<div class="space-y-4">
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">Docker & Kubernetes</span>
+									<span class="text-sm font-medium text-green-600">80%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">AWS / Cloud Infrastructure</span>
+									<span class="text-sm font-medium text-green-600">75%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between mb-1">
+									<span class="text-sm font-medium text-dark/70">CI/CD Pipelines (GitHub
+										Actions/Jenkins)</span>
+									<span class="text-sm font-medium text-green-600">85%</span>
+								</div>
+								<div class="w-full bg-cream-dark rounded-full h-2">
+									<div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tools & Others -->
+					<div class="glass p-8 rounded-2xl hover:bg-white/60 transition-colors md:col-span-2">
+						<h3 class="text-lg font-bold text-dark mb-4">Other Technologies</h3>
+						<div class="flex flex-wrap gap-3">
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">Git
+								& GitHub</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">Redis</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">Linux
+								Administration</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">Nginx/Apache</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">RESTful
+								APIs</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">GraphQL</span>
+							<span
+								class="px-4 py-2 bg-white rounded-lg text-sm text-dark/80 border border-accent/20 shadow-sm">Unit
+								Testing</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="py-20 bg-cream-dark/20">
+			<div class="container mx-auto px-6">
+				<h2 class="text-3xl font-bold mb-16 text-center text-dark">Professional <span
+						class="text-accent">Journey</span></h2>
+
+				<div class="max-w-4xl mx-auto relative">
+					<!-- Vertical Line -->
+					<div
+						class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-accent via-accent/50 to-transparent">
+					</div>
+
+					<!-- 1. Global Invest Partners Gmbh -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full group">
+							<div
+								class="order-1 md:w-5/12 mb-4 md:mb-0 text-left md:text-right pr-0 md:pr-8 animate-slide-in-left">
+								<h3 class="text-xl font-bold text-dark group-hover:text-accent transition-colors">
+									Full-stack Developer</h3>
+								<p class="text-accent font-medium">Global Invest Partners Gmbh</p>
+								<span class="text-sm text-dark/60">Dec 2023 - Present</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-accent rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-8">
+								<div
+									class="p-6 glass rounded-xl hover:shadow-accent/20 hover:shadow-lg transition-all hover:bg-white/60">
+									<p class="text-dark/80 text-sm">
+										Specializing in dynamic web apps with Python, Django, and Machine Learning.
+										Leveraging robust backend solutions and seamless frontend integration.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2. WISH Developers & Designs -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full flex-row-reverse group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left pl-8 animate-slide-in-right">
+								<h3 class="text-xl font-bold text-dark group-hover:text-secondary transition-colors">
+									Founder</h3>
+								<p class="text-secondary font-medium">WISH Developers & Designs</p>
+								<span class="text-sm text-dark/60">Nov 2016 - Present</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-secondary absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-secondary rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-0 md:pr-8 md:text-right">
+								<div
+									class="p-6 glass rounded-xl hover:shadow-secondary/20 hover:shadow-lg transition-all hover:bg-white/60">
+									<p class="text-dark/80 text-sm">
+										Founded WISHDD software house. specializing in casino solutions, cloud
+										infrastructure, and AI-driven business tools.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 3. Sorcim Technologies -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left md:text-right pr-0 md:pr-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-primary transition-colors">
+									Senior
+									PHP Developer</h3>
+								<p class="text-secondary font-medium">Sorcim Technologies</p>
+								<span class="text-sm text-dark/60">Apr 2018 - Oct 2023</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-8">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Developed comprehensive CMS using PHP CodeIgniter and RESTful APIs. Delivered
+										12+
+										cloud-based products serving 50,000+ users. Optimized MySQL databases for high
+										traffic.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 4. KDK Holding -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full flex-row-reverse group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left pl-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-secondary transition-colors">
+									Fullstack Developer</h3>
+								<p class="text-secondary font-medium">KDK Holding</p>
+								<span class="text-sm text-dark/60">Jul 2021 - Jan 2023</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-0 md:pr-8 md:text-right">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Spearheaded development of large-scale casino gaming portal with Laravel 8.x,
+										React,
+										Redis, and Socket.io. Handled high traffic and real-time game interactions.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 5. Wizgates -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left md:text-right pr-0 md:pr-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-primary transition-colors">Web
+									Developer</h3>
+								<p class="text-secondary font-medium">Wizgates</p>
+								<span class="text-sm text-dark/60">Sep 2016 - Mar 2018</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-8">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Designed LMS systems and Payment Gateway integrations. Streamlined retail
+										operations
+										and CRM integrations using PHP.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 6. SW3 Solutions -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full flex-row-reverse group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left pl-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-secondary transition-colors">Web
+									Developer</h3>
+								<p class="text-secondary font-medium">SW3 Solutions</p>
+								<span class="text-sm text-dark/60">Jan 2016 - Aug 2016</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-0 md:pr-8 md:text-right">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Led development of school, retail, and production management systems in
+										PHP/MySQL.
+										Integrated inventory management and CRM features.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 7. PentaSOLGroup -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left md:text-right pr-0 md:pr-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-primary transition-colors">Front
+									End Developer</h3>
+								<p class="text-secondary font-medium">PentaSOLGroup</p>
+								<span class="text-sm text-dark/60">Mar 2013 - Dec 2015</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-8">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Responsible for website development and maintenance. Provided essential IT
+										support
+										for digital assets and infrastructure.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 8. British Council -->
+					<div class="relative mb-12 md:mb-20">
+						<div class="md:flex items-center justify-between w-full flex-row-reverse group">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 text-left pl-8">
+								<h3 class="text-xl font-bold text-dark group-hover:text-secondary transition-colors">
+									Network Associate</h3>
+								<p class="text-secondary font-medium">British Council</p>
+								<span class="text-sm text-dark/60">Apr 2012 - Feb 2013</span>
+							</div>
+							<div
+								class="z-20 flex items-center order-1 bg-cream shadow-xl w-8 h-8 rounded-full border-2 border-accent/50 absolute left-0 md:left-1/2 transform -translate-x-1/2 md:translate-x-[-15px]">
+								<div class="w-3 h-3 bg-gray-400 rounded-full mx-auto"></div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-8 md:pl-0 md:pr-8 md:text-right">
+								<div class="p-6 glass rounded-xl hover:bg-white/60 transition-all">
+									<p class="text-dark/80 text-sm">
+										Managed and oversaw network operations and provided crucial IT support in a
+										multifaceted role.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GitHub Section -->
+		<section id="projects" class="py-20 relative">
+			<div class="container mx-auto px-6">
+				<h2 class="text-3xl font-bold mb-12 text-center text-dark">GitHub <span
+						class="text-accent">Activity</span>
+				</h2>
+
+				<!-- Activity Graph -->
+				<div
+					class="glass p-4 rounded-2xl mb-12 overflow-x-auto flex justify-center hover:bg-white/60 transition-colors">
+					<!-- Using github-readme-activity-graph -->
+					<img src="https://github-readme-activity-graph.vercel.app/graph?username=waqas-yousaf&theme=react-dark&bg_color=0f172a&color=3b82f6&line=10b981&point=ffffff&hide_border=true"
+						alt="Waqas's Github Activity Graph" class="max-w-full">
+				</div>
+
+				<!-- Stats & Top Languages -->
+				<div class="grid md:grid-cols-2 gap-8 mb-12">
+					<div
+						class="glass p-6 rounded-2xl flex items-center justify-center hover:bg-white/60 transition-colors">
+						<img src="https://github-readme-stats.vercel.app/api?username=waqas-yousaf&show_icons=true&theme=dark&bg_color=00000000&hide_border=true&title_color=ff6d1f&icon_color=10b981&text_color=222222"
+							alt="GitHub Stats">
+					</div>
+					<div
+						class="glass p-6 rounded-2xl flex items-center justify-center hover:bg-white/60 transition-colors">
+						<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=waqas-yousaf&layout=compact&theme=dark&bg_color=00000000&hide_border=true&title_color=ff6d1f&text_color=222222"
+							alt="Top Languages">
+					</div>
+				</div>
+
+				<!-- Pinned/Featured Projects Placeholder -->
+				<!-- Projects Grid -->
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<!-- fip.com.pk -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-blue-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-blue-500/20 rounded-lg text-blue-600"><i
+										class="fa-solid fa-code"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">fip.com.pk</h3>
+							<p class="text-dark/70 text-sm mb-4">Financial investment platform.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#TypeScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- pakistankhabar.tv -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-red-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-red-500/20 rounded-lg text-red-600"><i
+										class="fa-solid fa-layer-group"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">pakistankhabar.tv</h3>
+							<p class="text-dark/70 text-sm mb-4">News and media portal.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- turkiyekhabar.tv -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-red-500 to-rose-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-rose-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-rose-500/20 rounded-lg text-rose-600"><i class="fa-solid fa-tv"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">turkiyekhabar.tv</h3>
+							<p class="text-dark/70 text-sm mb-4">Digital media content platform.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- turk-kapi.com -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-emerald-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-emerald-500/20 rounded-lg text-emerald-600"><i
+										class="fa-solid fa-building"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">turk-kapi.com</h3>
+							<p class="text-dark/70 text-sm mb-4">Business services portal.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- wegip.com -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-amber-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-amber-500/20 rounded-lg text-amber-600"><i
+										class="fa-brands fa-js"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">wegip.com</h3>
+							<p class="text-dark/70 text-sm mb-4">Web application.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#JavaScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- turkkapirealestate -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-cyan-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-cyan-500/20 rounded-lg text-cyan-600"><i
+										class="fa-solid fa-home"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">turkkapirealestate</h3>
+							<p class="text-dark/70 text-sm mb-4">Real estate management system.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#JavaScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- cryptojobs -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-purple-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-purple-500/20 rounded-lg text-purple-600"><i
+										class="fa-brands fa-bitcoin"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">cryptojobs</h3>
+							<p class="text-dark/70 text-sm mb-4">Job board for crypto industry.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- zyra-app -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-indigo-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-indigo-500/20 rounded-lg text-indigo-600"><i
+										class="fa-brands fa-php"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">zyra-app</h3>
+							<p class="text-dark/70 text-sm mb-4">Custom PHP application.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#PHP</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- turkkapiedication.com -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-green-500 to-lime-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-green-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-green-500/20 rounded-lg text-green-600"><i
+										class="fa-solid fa-graduation-cap"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">turkkapiedication.com</h3>
+							<p class="text-dark/70 text-sm mb-4">Educational platform.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#JavaScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- meisyndicate.com -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-slate-600 to-gray-600 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-gray-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-gray-500/20 rounded-lg text-gray-600"><i
+										class="fa-solid fa-users"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">meisyndicate.com</h3>
+							<p class="text-dark/70 text-sm mb-4">Syndicate management.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#JavaScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- azerbaijan -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-blue-400 to-red-400 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-blue-400/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-blue-400/20 rounded-lg text-blue-600"><i
+										class="fa-solid fa-globe"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">azerbaijan</h3>
+							<p class="text-dark/70 text-sm mb-4">Regional portal.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- kaizens -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-sky-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-sky-500/20 rounded-lg text-sky-600"><i
+										class="fa-solid fa-chart-line"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">kaizens</h3>
+							<p class="text-dark/70 text-sm mb-4">Continuous improvement platform.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#TypeScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sorcim.com -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-red-700 to-red-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-red-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-red-500/20 rounded-lg text-red-600"><i
+										class="fa-solid fa-desktop"></i>
+								</div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">Sorcim.com</h3>
+							<p class="text-dark/70 text-sm mb-4">Software utility site.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Blade</span>
+								<span>#Laravel</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- showhalal -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-green-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-green-500/20 rounded-lg text-green-600"><i
+										class="fa-solid fa-utensils"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">showhalal</h3>
+							<p class="text-dark/70 text-sm mb-4">Halal certification/finder.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#JavaScript</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- EasyTranscribe -->
+					<div class="group relative block h-full">
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-gray-500 to-zinc-500 rounded-2xl blur opacity-10 group-hover:opacity-30 transition-opacity">
+						</div>
+						<div
+							class="relative h-full glass p-6 rounded-2xl border border-accent/20 group-hover:border-zinc-500/50 transition-all transform group-hover:-translate-y-1 hover:bg-white/80">
+							<div class="flex justify-between items-start mb-4">
+								<div class="p-2 bg-zinc-500/20 rounded-lg text-zinc-600"><i
+										class="fa-solid fa-headphones"></i></div>
+								<span
+									class="px-2 py-1 rounded text-xs font-medium bg-white text-dark/60 border border-accent/20">Private</span>
+							</div>
+							<h3 class="text-lg font-bold text-dark mb-2">EasyTranscribe</h3>
+							<p class="text-dark/70 text-sm mb-4">Audio transcription tool.</p>
+							<div class="flex flex-wrap gap-2 text-xs text-accent mt-auto">
+								<span>#Tool</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="text-center mt-12">
+					<a href="https://github.com/waqas-yousaf" target="_blank"
+						class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent hover:bg-dark text-white font-medium transition-colors border border-transparent shadow-lg hover:shadow-xl">
+						<span>View More on GitHub</span>
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</section>
 
 
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- #SKILLS# -->
-				<section id="skills" class="section section-skills wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">SKILLS</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="professional-skills">
-								<div class="title-skills">
-									<h3>PROFESSIONAL SKILLS</h3>
-								</div>
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">CodeIgniter</span>
-										<span class="skill-value">80%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">WordPress</span>
-										<span class="skill-value">90%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Core PHP / MYSQL</span>
-										<span class="skill-value">100%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Java Script</span>
-										<span class="skill-value">80%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress4" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">HTML, CSS</span>
-										<span class="skill-value">70%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-							</div>
-						</div>
-						<div class="col-md-7">
-							<div class="additional-skills">
-								<div class="title-skills">
-									<h3>ADDITIONAL SKILLS</h3>
-								</div>
-								<div class="circle-progress">
-									<div class="row">
-										<!-- single circle skill -->
-										<div class="col-sm-4">
-											<div class="circle">
-												<div class="chart-percentage">
-													<span>100%</span>
-												</div>
-												<div class="chart" data-percent="100">
-													<!-- canvas -->
-												</div>
-												<div class="name-circle">
-													<span>Communication Skills</span>
-												</div>
-											</div>
-										</div>
-										<!-- / single circle skill -->
-										<!-- single circle skill -->
-										<div class="col-sm-4">
-											<div class="circle">
-												<div class="chart-percentage">
-													<span>100%</span>
-												</div>
-												<div class="chart" data-percent="100">
-													<!-- canvas -->
-												</div>
-												<div class="name-circle">
-													<span>Object Oriented Programming</span>
-												</div>
-											</div>
-										</div>
-										<!-- / single circle skill -->
-										<!-- single circle skill -->
-										<div class="col-sm-4">
-											<div class="circle">
-												<div class="chart-percentage">
-													<span>100%</span>
-												</div>
-												<div class="chart" data-percent="100">
-													<!-- canvas -->
-												</div>
-												<div class="name-circle">
-													<span>Teamwork</span>
-												</div>
-											</div>
-										</div>
-										<!-- / single circle skill -->
-									</div>
-								</div>
-								<div class="other-skills">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="other">
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>JQuery</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Plugin Development</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>MVC</span>
-												</div>
-												<!-- / single other skill -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="other">
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Bootstrap</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Photoshop</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>WHM</span>
-												</div>
-												<!-- / single other skill -->
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- #EDUCATION# -->
-				<section id="education" class="section section-education wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">EDUCATION</h2>
-					</div>
-					<div class="row">
-						<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2011</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">IELTS</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">British Council.</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-				            	<p class="prg-education">I passed my English proficiency test (IELTS) certifaction while scoring 7.0 over all band.</p>
-				            </div>
-						</div>
-						<!-- / single education -->	<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2008 - 2010</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">MBA - IT</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">Virtual University, Islamabad.</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-				            	<p class="prg-education">I studies my MBA-IT from VU and Developed Learning Management System as Final Project.</p>
-				            </div>
-						</div>
-						<!-- / single education -->
-						<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2005 - 2007</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">B.Sc.</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">BZ University, Multan.</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-				            	<p class="prg-education">I completed this degree from this prestigious insitution majoring in economics, computer science.</p>
-				            </div>
-						</div>
-						
-						<!-- / single education -->
-						<div class="clearfix"></div>
-						
-		
-					</div>
-				</section>
-				<!-- #EXPERIENCE# -->
-				<section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">EXPERIENCE</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1">
-							<span class="icon-experience">
-								<i class="fa fa-briefcase"></i>
-							</span>
-							<div class="all-experience">
-								<!-- single experience -->
-								<div class="experience-content">
-									<span class="period-experience">Aug 2016 - Current</span>
-									<h3 class="specialty-name">Wordpress Developer</h3>
-									<h3 class="company-name">WISH DEVELOPERS & DESGINERS</h3>
-									<p class="prg-experience">Website designing and Development using HTML, CSS, PHP, JQUERY, XML<br />
-															Management System Development<br />
-															PSD to HTML, Newsletter Design.<br />
-															E-commerce / Shopping portal<br />
-															Wordpress Development.</p>
-															DOM Parsing<br />
-															Social Media API integration<br />
-															</p>
-								</div>
-								<!-- / single experience -->
-								<!-- single experience -->
-								<div class="experience-content">
-									<span class="period-experience">Jan 2016 - Aug 2016</span>
-									<h3 class="specialty-name">Web Developer</h3>
-									<h3 class="company-name">SW3 Solutions</h3>
-									<p class="prg-experience">Development of web projects in PHP, MySQL.<br />
-																Development of e-reporting systems<br />
-																DOM and JSON parsing<br />
-																Modification of custom baked CMS “mySite”<br />
-																API integration (CURL,REST)<br />
-																E-commerce / Shopping portal<br />
-																Wordpress Development.</p>
-								</div>
-								<!-- / single experience -->
 
-						
-							</div>
-						</div>
-					</div>
-				</section>
-		
+		<!-- Floating WhatsApp Button -->
+		<a href="https://wa.me/4917683081592" target="_blank"
+			class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] transition-all hover:scale-110 animate-bounce">
+			<i class="fa-brands fa-whatsapp text-3xl"></i>
+		</a>
 
-				<!-- #TESTIMONIALS# -->
-				<section id="testimonials" class="section section-testimonials wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">TESTIMONIALS</h2>
+		<!-- Footer -->
+		<footer class="py-12 bg-dark border-t border-accent/20 text-center">
+			<div class="container mx-auto px-6">
+				<div class="flex justify-center space-x-6 mb-6">
+					<a href="https://facebook.com"
+						class="text-gray-400 hover:text-accent transition-colors transform hover:scale-110"><i
+							class="fa-brands fa-facebook text-2xl"></i></a>
+
+					<a href="https://linkedin.com/in/waqasbiz"
+						class="text-gray-400 hover:text-accent transition-colors transform hover:scale-110"><i
+							class="fa-brands fa-linkedin text-2xl"></i></a>
+					<a href="https://github.com/waqas-yousaf"
+						class="text-gray-400 hover:text-accent transition-colors transform hover:scale-110"><i
+							class="fa-brands fa-github text-2xl"></i></a>
+				</div>
+				<p class="text-gray-500 text-sm">
+					&copy;
+					<script>document.write(new Date().getFullYear())</script> Waqas Yousaf. All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</div> <!-- End View: Home -->
+
+	<!-- View: Tool - Password -->
+	<div id="view-tool-password" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-2xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-lock text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">Password Generator</h1>
+				</div>
+
+				<!-- Password Gen Content -->
+				<div class="flex gap-2 mb-6">
+					<input type="text" id="gen-password" readonly
+						class="w-full bg-white border-2 border-accent rounded-lg px-4 py-4 text-lg font-mono text-dark focus:outline-none focus:border-accent transition-colors shadow-inner"
+						value="">
+					<button onclick="copyToClipboard('gen-password')"
+						class="p-4 bg-accent hover:bg-dark text-white rounded-lg transition-all border-2 border-accent hover:border-dark"
+						title="Copy"><i class="fa-regular fa-copy text-xl"></i></button>
+				</div>
+				<div class="flex justify-end mb-6">
+					<button onclick="generatePassword()"
+						class="text-sm bg-accent text-white px-4 py-2 rounded-full hover:bg-dark transition-all shadow-md">
+						<i class="fa-solid fa-rotate mr-2"></i> Regenerate
+					</button>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-dark">
+					<div class="col-span-1 md:col-span-2">
+						<label class="block text-sm font-bold mb-2">Password Length: <span id="pass-length-val"
+								class="text-accent">16</span></label>
+						<input type="range" id="pass-length" min="8" max="64" value="16"
+							class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-accent"
+							oninput="updateLengthVal(this.value); generatePassword()">
 					</div>
-				    <div class="swiper-container">
-				        <div class="swiper-wrapper">
-				        	<!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            		<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            		<h3>seanmstone</h3>
-				            		<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				            	</div>
-				            	<div class="personal-text">
-				            	<p><i class="fa fa-quote-left"></i>Excellent !!! will order again !! Great communications- Project was on time and done very well !.<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				            <!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            		<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            		<h3>seanmstone</h3>
-				            		<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				            	</div>
-				            	<div class="personal-text">
-				            	<p><i class="fa fa-quote-left"></i>really wonderful to work with. Professional and really good at communicating. Understood the project scope and was right on time . Thank you will order again !.<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				            <!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            		<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            		<h3>rsotb_uk</h3>
-				            		<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				            	</div>
-				            	<div class="personal-text">
-				            		<p><i class="fa fa-quote-left"></i>Outstanding Experience!<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				            <!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            	<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            	<h3>martingjelstrup</h3>
-				            	<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				            	
-				            	</div>
-				            	<div class="personal-text">
-				            	<p><i class="fa fa-quote-left"></i>Fast delivery and my problem solved. Thanks.<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				            <!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            	<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            	<h3>crossmediasol</h3>
-				           		<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				             	</div>
-				            	<div class="personal-text">
-				            	<p><i class="fa fa-quote-left"></i>He Is good Seller. Good Communication and Delivery Time.<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				            <!-- single testimonial -->
-				            <div class="swiper-slide">
-				            	<div class="personal-info">
-				            		<img src="assets/images/testimonial/fiverr.png" alt="Fiverr Client for wishdd">
-				            		<h3>crossmediasol</h3>
-				            		<span>Client from <a href="https://www.fiverr.com/wishdd">Fiverr</a></span>
-				            
-				            	</div>
-				            	<div class="personal-text">
-				            	<p><i class="fa fa-quote-left"></i>Pellentesque in elit sed magna imperdiet finibus sed sed erat. Curabitur laoreet feugiat ligula, quis feugiat nibh rhoncus et. Nam id leo.<i class="fa fa-quote-right"></i></p>
-				            	</div>
-				            </div>
-				            <!-- / single testimonial -->
-				        </div>
-				        <!-- Add Pagination -->
-				        <div class="swiper-pagination">
-				        	<!-- span -->
-				        </div>
-				    </div>
-				</section>
-				<!-- #INTERESTS# -->
-				<section id="interests" class="section section-interests wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">INTERESTS</h2>
-					</div>
-					<div class="text-interests">
-						<p>Here are some of my Interests and Hobbies.</p>
-					</div>
-					<!-- more icons for interests : https://www.iconfinder.com/ -->
-				    <div class="swiper-container">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/travel_icon.png" alt="Travel">
-				            	</div>
-				            	<h4>Travel</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/music_icon.png" alt="Music">
-				            	</div>
-				            	<h4>Music</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/gaming_icon.png" alt="Gaming">
-				            	</div>
-				            	<h4>Gaming</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/swiming_icon.png" alt="Swiming">
-				            	</div>
-				            	<h4>Swiming</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/movies_icon.png" alt="Movies">
-				            	</div>
-				            	<h4>Movies</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="assets/images/interests/shopping_icon.png" alt="Shopping">
-				            	</div>
-				            	<h4>Shopping</h4>
-				            </div>
-				        </div>
-				    </div>
-				</section>
-				
-				<!-- #CONTACT_ME# -->
-				<section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">CONTACT ME</h2>
-					</div>
-					<div class="row">
-						<div class="col-sm-7">
-							<div class="form-content">
-								<h3>SEND ME A MESSAGE</h3>
-								<form id='' data-toggle='validator' method='post' action='https://formspree.io/wiqi22@gmail.com'><input type='hidden' name='form-name' value='contactForm' />
-									<input type="text" id="name" placeholder="Name" required>
-									<input type="email" id="email" placeholder="Email" required>
-									<textarea id="message" placeholder="Message" required></textarea>
-									<input type="submit" id="form-submit" value="SEND">
-									<div id="msgSubmit" class="h3 text-center hidden"></div>
-            						<div class="clearfix"></div>
-								</form>
-							</div>
-						</div>
-						<div class="col-sm-5">
-							<div class="info-content">
-								<h3>KEEP IN TOUCH</h3>
-								<div class="address">
-									<span class="info-icon"><i class="fa fa-map-marker"></i></span>
-									<span class="info-text">Lahore, Pakistan. 54000</span>
-								</div>
-								<div class="email">
-									<span class="info-icon"><i class="fa fa-envelope"></i></span>
-									<span class="info-text">waqas@wishdd.com</span>
-								</div>
-								<div class="website">
-									<span class="info-icon"><i class="fa fa-facebook"></i></span>
-									<span class="info-text">/waqasbiz</span>
-								</div>
-								<div class="website">
-									<span class="info-icon"><i class="fa fa-link"></i></span>
-									<span class="info-text"><a href="https://goo.gl/XctQav"></a>www.wishdd.com</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="social-links">
-						<ul>
-							<li><a href="https://goo.gl/KnHtwS"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://goo.gl/IQj8cX"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://goo.gl/sttPoC"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="https://goo.gl/EOte5a"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://goo.gl/TTS0Py"><i class="fa fa-github"></i></a></li>
-						</ul>
-					</div>
-				</section>
+					<label
+						class="flex items-center gap-3 cursor-pointer p-4 glass rounded-xl hover:bg-white/60 transition-colors">
+						<input type="checkbox" id="chk-upper" checked onchange="generatePassword()"
+							class="w-5 h-5 text-accent focus:ring-accent rounded">
+						<span class="font-medium">Uppercase (A-Z)</span>
+					</label>
+					<label
+						class="flex items-center gap-3 cursor-pointer p-4 glass rounded-xl hover:bg-white/60 transition-colors">
+						<input type="checkbox" id="chk-lower" checked onchange="generatePassword()"
+							class="w-5 h-5 text-accent focus:ring-accent rounded">
+						<span class="font-medium">Lowercase (a-z)</span>
+					</label>
+					<label
+						class="flex items-center gap-3 cursor-pointer p-4 glass rounded-xl hover:bg-white/60 transition-colors">
+						<input type="checkbox" id="chk-numbers" checked onchange="generatePassword()"
+							class="w-5 h-5 text-accent focus:ring-accent rounded">
+						<span class="font-medium">Numbers (0-9)</span>
+					</label>
+					<label
+						class="flex items-center gap-3 cursor-pointer p-4 glass rounded-xl hover:bg-white/60 transition-colors">
+						<input type="checkbox" id="chk-symbols" checked onchange="generatePassword()"
+							class="w-5 h-5 text-accent focus:ring-accent rounded">
+						<span class="font-medium">Symbols (!@#)</span>
+					</label>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- #JQUERY-PLUGINS# -->
-		<script src='assets/js/custom.js'></script>
-		<script>
-		/**** EasyPieChart Circle Progress ****/
-		$(function() {
-			//circle progress additional skills
-		    $('.chart').easyPieChart({
-		        barColor: '#757575',
-		        trackColor: 'rgba(255,255,255,0)',
-		        scaleColor: 'rgba(255,255,255,0)',
-		        lineWidth: '10',
-		        lineCap: 'square'
-		    });
+	<!-- View: Tool - UUID -->
+	<div id="view-tool-uuid" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-2xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-fingerprint text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">UUID v4 Generator</h1>
+				</div>
+
+				<div class="flex gap-2 mb-8">
+					<input type="text" id="gen-uuid" readonly
+						class="w-full bg-white border-2 border-accent rounded-lg px-4 py-4 text-lg font-mono text-dark focus:outline-none focus:border-accent transition-colors shadow-inner"
+						value="">
+					<button onclick="copyToClipboard('gen-uuid')"
+						class="p-4 bg-accent hover:bg-dark text-white rounded-lg transition-all border-2 border-accent hover:border-dark"
+						title="Copy"><i class="fa-regular fa-copy text-xl"></i></button>
+				</div>
+				<div class="text-center">
+					<button onclick="generateUUID()"
+						class="px-8 py-3 bg-accent text-white rounded-full hover:bg-dark transition-all shadow-lg hover:shadow-xl font-bold">
+						<i class="fa-solid fa-rotate mr-2"></i> Generate New UUID
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - Slug -->
+	<div id="view-tool-slug" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-2xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-link text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">String to Slug</h1>
+				</div>
+
+				<div class="space-y-6">
+					<div>
+						<label class="block text-sm font-bold mb-2 text-dark">Input Text</label>
+						<textarea id="slug-input" rows="3" placeholder="Enter text to slugify..."
+							class="w-full bg-white border-2 border-accent/50 rounded-lg px-4 py-3 text-dark focus:outline-none focus:border-accent transition-colors"
+							oninput="generateSlug()"></textarea>
+					</div>
+
+					<div>
+						<label class="block text-sm font-bold mb-2 text-dark">Slug Output</label>
+						<div class="flex gap-2">
+							<input type="text" id="slug-output" readonly
+								class="w-full bg-white border-2 border-accent rounded-lg px-4 py-3 text-lg font-mono text-dark focus:outline-none focus:border-accent transition-colors shadow-inner"
+								value="">
+							<button onclick="copyToClipboard('slug-output')"
+								class="p-3 bg-accent hover:bg-dark text-white rounded-lg transition-all border-2 border-accent hover:border-dark"
+								title="Copy"><i class="fa-regular fa-copy text-xl"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - Laravel -->
+	<div id="view-tool-laravel" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-2xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-brands fa-laravel text-4xl text-red-600"></i>
+					<h1 class="text-3xl font-bold text-dark">Laravel APP_KEY Generator</h1>
+				</div>
+
+				<div class="flex gap-2 mb-8">
+					<input type="text" id="gen-key" readonly
+						class="w-full bg-white border-2 border-accent rounded-lg px-4 py-4 text-lg font-mono text-dark focus:outline-none focus:border-accent transition-colors shadow-inner"
+						value="">
+					<button onclick="copyToClipboard('gen-key')"
+						class="p-4 bg-accent hover:bg-dark text-white rounded-lg transition-all border-2 border-accent hover:border-dark"
+						title="Copy"><i class="fa-regular fa-copy text-xl"></i></button>
+				</div>
+				<div class="text-center">
+					<button onclick="generateLaravelKey()"
+						class="px-8 py-3 bg-accent text-white rounded-full hover:bg-dark transition-all shadow-lg hover:shadow-xl font-bold">
+						<i class="fa-solid fa-rotate mr-2"></i> Regenerate Key
+					</button>
+				</div>
+
+				<p class="text-sm text-center text-dark/60 mt-6">
+					Generates a standard 32-byte secure random key for Laravel `.env` usage.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - Base64 -->
+	<div id="view-tool-base64" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-4xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-code text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">Base64 Converter</h1>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div class="space-y-4">
+						<label class="block text-sm font-bold text-dark">Input</label>
+						<textarea id="base64-input" rows="8" placeholder="Enter text to encode or Base64 to decode..."
+							class="w-full bg-white border-2 border-accent/50 rounded-lg px-4 py-3 text-dark font-mono text-sm focus:outline-none focus:border-accent transition-colors"></textarea>
+					</div>
+					<div class="space-y-4">
+						<label class="block text-sm font-bold text-dark">Output</label>
+						<textarea id="base64-output" rows="8" readonly
+							class="w-full bg-white border-2 border-accent rounded-lg px-4 py-3 text-dark font-mono text-sm focus:outline-none shadow-inner"></textarea>
+					</div>
+				</div>
+
+				<div class="flex justify-center gap-4 mt-8">
+					<button onclick="handleBase64('encode')"
+						class="px-6 py-2 bg-accent text-white rounded-full hover:bg-dark transition-all shadow-lg hover:shadow-xl font-bold">
+						Encode
+					</button>
+					<button onclick="handleBase64('decode')"
+						class="px-6 py-2 bg-dark text-white rounded-full hover:bg-accent transition-all shadow-lg hover:shadow-xl font-bold">
+						Decode
+					</button>
+					<button onclick="copyToClipboard('base64-output')"
+						class="px-6 py-2 glass border border-accent/20 text-accent font-bold rounded-full hover:bg-white transition-all shadow-lg">
+						Copy Output
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - JSON -->
+	<div id="view-tool-json" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-4xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-brackets-curly text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">JSON Formatter</h1>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-6">
+					<div class="space-y-4">
+						<label class="block text-sm font-bold text-dark">Input JSON</label>
+						<textarea id="json-input" rows="12" placeholder="Paste your JSON here..."
+							class="w-full bg-white border-2 border-accent/50 rounded-lg px-4 py-3 text-dark font-mono text-sm focus:outline-none focus:border-accent transition-colors"></textarea>
+					</div>
+					<div class="space-y-4">
+						<label class="block text-sm font-bold text-dark">Formatted Output</label>
+						<textarea id="json-output" rows="12" readonly
+							class="w-full bg-white border-2 border-accent rounded-lg px-4 py-3 text-dark font-mono text-sm focus:outline-none shadow-inner"></textarea>
+					</div>
+				</div>
+
+				<div class="flex justify-center gap-4 mt-8">
+					<button onclick="formatJSON()"
+						class="px-6 py-2 bg-accent text-white rounded-full hover:bg-dark transition-all shadow-lg hover:shadow-xl font-bold">
+						Format / Validate
+					</button>
+					<button onclick="minifyJSON()"
+						class="px-6 py-2 bg-dark text-white rounded-full hover:bg-accent transition-all shadow-lg hover:shadow-xl font-bold">
+						Minify
+					</button>
+					<button onclick="copyToClipboard('json-output')"
+						class="px-6 py-2 glass border border-accent/20 text-accent font-bold rounded-full hover:bg-white transition-all shadow-lg">
+						Copy Output
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - Timestamp -->
+	<div id="view-tool-timestamp" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-2xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-clock text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">Unix Timestamp Converter</h1>
+				</div>
+				<div class="space-y-6">
+					<div class="text-center">
+						<p class="text-sm font-bold text-dark mb-2">Current Epoch Timestamp</p>
+						<div class="text-3xl font-mono text-accent font-bold" id="current-timestamp">Loading...</div>
+					</div>
+					<hr class="border-accent/20">
+					<div class="grid gap-4">
+						<div>
+							<label class="block text-sm font-bold text-dark mb-1">Timestamp to Date</label>
+							<div class="flex gap-2">
+								<input type="number" id="ts-input" placeholder="e.g. 1672531200"
+									class="w-full bg-white border-2 border-accent/50 rounded-lg px-4 py-2 text-dark font-mono focus:outline-none focus:border-accent">
+								<button onclick="convertTimestamp()"
+									class="px-4 py-2 bg-accent text-white rounded-lg font-bold hover:bg-dark transition-all">Convert</button>
+							</div>
+							<div class="mt-2 text-dark font-mono text-sm" id="ts-result"></div>
+						</div>
+						<div>
+							<label class="block text-sm font-bold text-dark mb-1">Date to Timestamp</label>
+							<div class="flex gap-2">
+								<input type="datetime-local" id="date-input"
+									class="w-full bg-white border-2 border-accent/50 rounded-lg px-4 py-2 text-dark font-mono focus:outline-none focus:border-accent">
+								<button onclick="convertDate()"
+									class="px-4 py-2 bg-dark text-white rounded-lg font-bold hover:bg-accent transition-all">Convert</button>
+							</div>
+							<div class="flex gap-2 mt-2">
+								<input type="text" id="date-result" readonly
+									class="w-full bg-transparent font-mono text-dark" placeholder="Result...">
+								<button onclick="copyToClipboard('date-result')" class="text-accent hover:text-dark"><i
+										class="fa-regular fa-copy"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- View: Tool - Lorem Ipsum -->
+	<div id="view-tool-lorem" class="page-view hidden min-h-screen flex flex-col justify-center py-20">
+		<div class="container mx-auto px-6 max-w-3xl">
+			<a href="#home"
+				class="inline-flex items-center gap-2 text-accent hover:text-dark font-bold mb-8 transition-colors">
+				<i class="fa-solid fa-arrow-left"></i> Back to Home
+			</a>
+			<div
+				class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden bg-cream/50 shadow-2xl border-2 border-accent/20">
+				<div class="flex items-center gap-4 mb-8 border-b border-accent/20 pb-4">
+					<i class="fa-solid fa-paragraph text-4xl text-accent"></i>
+					<h1 class="text-3xl font-bold text-dark">Lorem Ipsum Generator</h1>
+				</div>
+				<div class="flex gap-4 mb-6 items-end">
+					<div>
+						<label class="block text-sm font-bold text-dark mb-2">Paragraphs</label>
+						<input type="number" id="lorem-count" value="3" min="1" max="10"
+							class="w-20 bg-white border-2 border-accent/50 rounded-lg px-3 py-2 text-dark font-bold focus:outline-none focus:border-accent">
+					</div>
+					<button onclick="generateLorem()"
+						class="px-6 py-2 bg-accent text-white rounded-full hover:bg-dark transition-all shadow-lg font-bold h-10">Generate</button>
+					<button onclick="copyToClipboard('lorem-output')"
+						class="px-6 py-2 glass border border-accent/20 text-accent rounded-full hover:bg-white transition-all shadow-lg font-bold h-10">Copy</button>
+				</div>
+				<textarea id="lorem-output" rows="10" readonly
+					class="w-full bg-white border-2 border-accent rounded-lg px-6 py-4 text-dark/80 leading-relaxed focus:outline-none shadow-inner"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<!-- Island Menu -->
+	<div class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 animate-fade-in-down">
+		<nav
+			class="glass px-2 py-2 rounded-full flex items-center gap-1 shadow-2xl border border-accent/20 bg-cream/90 backdrop-blur-md">
+			<a href="#home" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
+				class="px-5 py-2.5 rounded-full text-sm font-bold text-dark hover:bg-white hover:text-accent transition-all flex items-center gap-2">
+				<i class="fa-solid fa-user"></i> Me
+			</a>
+			<div class="w-px h-6 bg-accent/20 mx-1"></div>
+			<a href="#home" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+				class="px-5 py-2.5 rounded-full text-sm font-bold text-dark hover:bg-white hover:text-accent transition-all flex items-center gap-2">
+				<i class="fa-solid fa-toolbox"></i> Tools
+			</a>
+			<div class="w-px h-6 bg-accent/20 mx-1"></div>
+			<a href="https://wa.me/4917683081592" target="_blank"
+				class="px-5 py-2.5 rounded-full text-sm font-bold text-white bg-accent hover:bg-dark transition-all flex items-center gap-2 shadow-lg shadow-accent/20">
+				<i class="fa-brands fa-whatsapp text-lg"></i> Hire
+			</a>
+		</nav>
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		// Mobile Menu Toggle
+		const btn = document.querySelector('button.md\\:hidden');
+		const menu = document.querySelector('.md\\:flex');
+
+		btn.addEventListener('click', () => {
+			menu.classList.toggle('hidden');
+			menu.classList.toggle('flex');
+			menu.classList.toggle('flex-col');
+			menu.classList.toggle('absolute');
+			menu.classList.toggle('top-16');
+			menu.classList.toggle('left-0');
+			menu.classList.toggle('w-full');
+			menu.classList.toggle('bg-cream');
+			menu.classList.toggle('border-b');
+			menu.classList.toggle('border-accent');
+			menu.classList.toggle('shadow-xl');
+			menu.classList.toggle('p-4');
+			menu.classList.toggle('text-center');
 		});
-		</script>
 
-	</body>
+		// Smooth Scroll for Anchor Links (polyfill for older browsers if needed, but css scroll-smooth handles most)
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+				// Close mobile menu on click
+				if (!menu.classList.contains('hidden')) {
+					btn.click();
+				}
+			});
+		});
+	</script>
+	<script>
+		// Developer Tools Widget Logic
+		function updateLengthVal(val) {
+			document.getElementById('pass-length-val').innerText = val;
+		}
+
+		function generatePassword() {
+			const length = document.getElementById('pass-length').value;
+			const useUpper = document.getElementById('chk-upper').checked;
+			const useLower = document.getElementById('chk-lower').checked;
+			const useNumbers = document.getElementById('chk-numbers').checked;
+			const useSymbols = document.getElementById('chk-symbols').checked;
+
+			const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			const lower = "abcdefghijklmnopqrstuvwxyz";
+			const numbers = "0123456789";
+			const symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+
+			let charset = "";
+			if (useUpper) charset += upper;
+			if (useLower) charset += lower;
+			if (useNumbers) charset += numbers;
+			if (useSymbols) charset += symbols;
+
+			if (charset === "") {
+				document.getElementById("gen-password").value = "Select options!";
+				return;
+			}
+
+			let password = "";
+			for (let i = 0; i < length; i++) {
+				const randomIndex = Math.floor(Math.random() * charset.length);
+				password += charset[randomIndex];
+			}
+			document.getElementById("gen-password").value = password;
+		}
+
+		function generateLaravelKey() {
+			const arr = new Uint8Array(32);
+			crypto.getRandomValues(arr);
+			let binary = '';
+			const len = arr.byteLength;
+			for (let i = 0; i < len; i++) {
+				binary += String.fromCharCode(arr[i]);
+			}
+			const base64 = window.btoa(binary);
+			document.getElementById("gen-key").value = "base64:" + base64;
+		}
+
+		function copyToClipboard(elementId) {
+			const copyText = document.getElementById(elementId);
+			copyText.select();
+			copyText.setSelectionRange(0, 99999);
+			navigator.clipboard.writeText(copyText.value).then(() => {
+				// Optional: Feedback
+				const btn = copyText.nextElementSibling;
+				const originalHTML = btn.innerHTML;
+				btn.innerHTML = '<i class="fa-solid fa-check text-green-400"></i>';
+				setTimeout(() => {
+					btn.innerHTML = originalHTML;
+				}, 1500);
+			});
+		}
+
+		// UUID Generator
+		function generateUUID() {
+			// Fallback for non-secure contexts if needed, but modern browsers support randomUUID in secure contexts
+			if (typeof crypto.randomUUID === 'function') {
+				document.getElementById('gen-uuid').value = crypto.randomUUID();
+			} else {
+				// Fallback (e.g. for http localhost)
+				document.getElementById('gen-uuid').value = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+					var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+					return v.toString(16);
+				});
+			}
+		}
+
+		// Slug Generator
+		function generateSlug() {
+			const input = document.getElementById('slug-input').value;
+			const slug = input.toLowerCase()
+				.replace(/[^\w ]+/g, '')
+				.replace(/ +/g, '-');
+			document.getElementById('slug-output').value = slug;
+		}
+
+		// Base64 Tool
+		function handleBase64(action) {
+			const input = document.getElementById('base64-input').value;
+			const output = document.getElementById('base64-output');
+			try {
+				if (action === 'encode') {
+					output.value = btoa(input);
+				} else {
+					output.value = atob(input);
+				}
+			} catch (e) {
+				output.value = "Error: Invalid input for " + action;
+			}
+		}
+
+		// JSON Tool
+		function formatJSON() {
+			const input = document.getElementById('json-input').value;
+			const output = document.getElementById('json-output');
+			try {
+				const obj = JSON.parse(input);
+				output.value = JSON.stringify(obj, null, 4);
+			} catch (e) {
+				output.value = "Error: Invalid JSON\n" + e.message;
+			}
+		}
+
+		function minifyJSON() {
+			const input = document.getElementById('json-input').value;
+			const output = document.getElementById('json-output');
+			try {
+				const obj = JSON.parse(input);
+				output.value = JSON.stringify(obj);
+			} catch (e) {
+				output.value = "Error: Invalid JSON\n" + e.message;
+			}
+		}
+
+		// Timestamp Tool
+		setInterval(() => {
+			document.getElementById('current-timestamp').innerText = Math.floor(Date.now() / 1000);
+		}, 1000);
+
+		function convertTimestamp() {
+			const ts = document.getElementById('ts-input').value;
+			if (!ts) return;
+			const date = new Date(ts * 1000);
+			document.getElementById('ts-result').innerText = date.toUTCString() + " | " + date.toLocaleString();
+		}
+
+		function convertDate() {
+			const dateStr = document.getElementById('date-input').value;
+			if (!dateStr) return;
+			const ts = Math.floor(new Date(dateStr).getTime() / 1000);
+			document.getElementById('date-result').value = ts;
+		}
+
+		// Lorem Tool
+		function generateLorem() {
+			const count = document.getElementById('lorem-count').value;
+			const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+			let output = "";
+			for (let i = 0; i < count; i++) {
+				output += text + "\n\n";
+			}
+			document.getElementById('lorem-output').value = output.trim();
+		}
+
+		// Init generators
+		document.addEventListener('DOMContentLoaded', () => {
+			generatePassword();
+			generateLaravelKey();
+			generateUUID();
+		});
+	</script>
+
+
+	<script src="js/router.js"></script>
+</body>
+
 </html>
