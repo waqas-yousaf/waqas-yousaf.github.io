@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waqasyousaf.github.io/sitemap.xml
