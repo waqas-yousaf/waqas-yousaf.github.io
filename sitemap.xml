@@ -79,13 +79,19 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://waqasyousaf.github.io/tools/json-formatter-validator</loc>
+    <loc>https://waqasyousaf.github.io/tools/json-beautifier-minifier</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://waqasyousaf.github.io/tools/css-minifier</loc>
+    <loc>https://waqasyousaf.github.io/tools/css-minifier-beautifier</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waqasyousaf.github.io/tools/javascript-minifier-beautifier</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -217,13 +223,19 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://waqasyousaf.github.io/de/tools/json-formatter-validator</loc>
+    <loc>https://waqasyousaf.github.io/de/tools/json-beautifier-minifier</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://waqasyousaf.github.io/de/tools/css-minifier</loc>
+    <loc>https://waqasyousaf.github.io/de/tools/css-minifier-beautifier</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waqasyousaf.github.io/de/tools/javascript-minifier-beautifier</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
