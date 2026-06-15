@@ -2,7 +2,7 @@ import { writeFileSync } from 'fs';
 import { ABOUT_PATH } from '../src/data/about.js';
 import { PORTFOLIO_PATH } from '../src/data/portfolio.js';
 import { PRIVACY_PATH, TERMS_PATH } from '../src/data/legal.js';
-import { toolDefinitions, SITE_URL, TOOLS_PATH } from '../src/data/tools.js';
+import { SITE_URL, TOOLS_PATH } from '../src/data/tools.js';
 import { LOCALES, localizePath } from '../src/i18n/paths.js';
 
 const lastmod = new Date().toISOString().split('T')[0];
@@ -16,14 +16,8 @@ const staticEntries = [
   { path: TOOLS_PATH, changefreq: 'weekly', priority: '0.95' },
 ];
 
-const toolEntries = toolDefinitions.map((tool) => ({
-  path: tool.path,
-  changefreq: 'monthly',
-  priority: '0.9',
-}));
-
 const urls = LOCALES.flatMap((locale) =>
-  [...staticEntries, ...toolEntries].map((entry) => ({
+  staticEntries.map((entry) => ({
     loc: `${SITE_URL}${localizePath(entry.path, locale)}`,
     changefreq: entry.changefreq,
     priority: entry.priority,

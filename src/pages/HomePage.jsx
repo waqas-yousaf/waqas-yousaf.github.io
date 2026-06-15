@@ -40,7 +40,7 @@ function HomePage() {
           hasPart: tools.map((tool) => ({
             '@type': 'WebApplication',
             name: tool.longTitle,
-            url: `${SITE_URL}${localizePath(tool.path, locale)}`,
+            url: tool.url,
             description: tool.seoDescription,
           })),
         },

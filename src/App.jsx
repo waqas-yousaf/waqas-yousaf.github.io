@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/routing/ScrollToTop';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -9,11 +9,10 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ToolsPage from './pages/ToolsPage';
-import ToolPage from './pages/ToolPage';
+import WishddToolRedirect from './pages/WishddToolRedirect';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
-import { legacyToolRedirects } from './data/tools';
 
 const contentRoutes = (
   <>
@@ -23,11 +22,7 @@ const contentRoutes = (
     <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
     <Route path="terms-and-conditions" element={<TermsPage />} />
     <Route path="tools" element={<ToolsPage />} />
-    {Object.entries(legacyToolRedirects).map(([from, to]) => {
-      const routePath = from.replace(/^\//, '');
-      return <Route key={routePath} path={routePath} element={<Navigate to={to} replace />} />;
-    })}
-    <Route path="tools/:toolId/:app?" element={<ToolPage />} />
+    <Route path="tools/*" element={<WishddToolRedirect />} />
   </>
 );
 

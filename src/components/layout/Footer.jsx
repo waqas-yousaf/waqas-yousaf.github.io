@@ -9,7 +9,7 @@ import LocaleLink from '../common/LocaleLink';
 import { ABOUT_PATH, socialLinks } from '../../data/about';
 import { PORTFOLIO_PATH } from '../../data/portfolio';
 import { SITE_NAME } from '../../config/site';
-import { useTools, TOOLS_PATH } from '../../data/tools';
+import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 import { PRIVACY_PATH, TERMS_PATH } from '../../data/legal';
 import { resetCookieConsent } from '../../utils/cookieConsent';
 import { useLocale } from '../../i18n/useLocale';
@@ -25,7 +25,7 @@ function Footer() {
   const featuredTools = tools.slice(0, 4);
   const pathname = stripLocalePrefix(location.pathname);
   const isHome = pathname === '/';
-  const isToolsRoute = pathname === TOOLS_PATH || pathname.startsWith(`${TOOLS_PATH}/`);
+  const isToolsRoute = pathname === TOOLS_PATH;
 
   const pageLinks = [
     { to: '/', label: t('footer.home') },
@@ -80,11 +80,15 @@ function Footer() {
             <ul className="site-footer-links list-unstyled mb-0">
               {featuredTools.map((tool) => (
                 <li key={tool.id}>
-                  <LocaleLink to={tool.path}>{tool.title}</LocaleLink>
+                  <a href={tool.url} target="_blank" rel="noopener noreferrer">
+                    {tool.title}
+                  </a>
                 </li>
               ))}
               <li>
-                <LocaleLink to={TOOLS_PATH}>{t('footer.viewAllTools')}</LocaleLink>
+                <a href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer">
+                  {t('footer.viewAllTools')}
+                </a>
               </li>
             </ul>
           </Col>

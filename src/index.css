@@ -917,12 +917,12 @@ body {
   border-radius: 1.25rem;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.95);
-  box-shadow:
-    0 20px 48px rgba(15, 84, 147, 0.14),
-    0 0 0 1px rgba(191, 219, 254, 0.85);
-  background: #5a9ad4;
+
+  background: #eff8fe;
   max-width: 360px;
   margin: 0 auto;
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .about-portrait {

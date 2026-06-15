@@ -4,12 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import PageSeo from '../components/seo/PageSeo';
 import MaterialIcon from '../components/common/MaterialIcon';
 import LocaleLink from '../components/common/LocaleLink';
 import ToolCard from '../components/tools/ToolCard';
 import { SITE_NAME, SITE_URL } from '../config/site';
-import { useTools, getToolsLandingSeo } from '../data/tools';
+import { useTools, getToolsLandingSeo, WISHDD_TOOLS_URL } from '../data/tools';
 import { useLocale } from '../i18n/useLocale';
 import { localizePath } from '../i18n/paths';
 
@@ -98,7 +99,7 @@ function ToolsPage() {
           hasPart: tools.map((tool) => ({
             '@type': 'WebApplication',
             name: tool.longTitle,
-            url: `${SITE_URL}${localizePath(tool.path, locale)}`,
+            url: tool.url,
             description: tool.seoDescription,
           })),
         },
@@ -113,7 +114,7 @@ function ToolsPage() {
           hasPart: tools.map((tool) => ({
             '@type': 'WebApplication',
             name: tool.longTitle,
-            url: `${SITE_URL}${localizePath(tool.path, locale)}`,
+            url: tool.url,
             description: tool.seoDescription,
           })),
         },
@@ -164,6 +165,13 @@ function ToolsPage() {
                 <span className="text-primary">{t('tools.landing.headingHighlight')}</span>
               </h1>
               <p className="tools-landing-intro mx-auto mb-4">{t('tools.landing.intro', { count: tools.length })}</p>
+
+              <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <Button href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer" variant="primary" className="rounded-pill px-4">
+                  <MaterialIcon name="open_in_new" className="me-2" />
+                  {t('tools.landing.openOnWishdd')}
+                </Button>
+              </div>
 
               <div className="tools-landing-search-wrap mx-auto">
                 <MaterialIcon name="search" className="tools-landing-search-icon" />

@@ -11,7 +11,7 @@ import LocaleLink from '../common/LocaleLink';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import { ABOUT_PATH } from '../../data/about';
 import { PORTFOLIO_PATH } from '../../data/portfolio';
-import { useTools, TOOLS_PATH } from '../../data/tools';
+import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 import { stripLocalePrefix } from '../../i18n/paths';
 import { SITE_NAME } from '../../config/site';
 
@@ -34,14 +34,12 @@ function SiteNavbar() {
     [tools]
   );
 
-  const isToolsRoute = pathname === TOOLS_PATH || pathname.startsWith(`${TOOLS_PATH}/`);
+  const isToolsRoute = pathname === TOOLS_PATH;
 
   const navLinkClass = (path) => {
     const isActive = pathname === path;
     return `site-nav-link${isActive ? ' active' : ''}`;
   };
-
-  const isToolActive = (path) => pathname === path;
 
   return (
     <header className={`site-navbar-wrapper${isToolsRoute ? ' site-navbar-wrapper--tools' : ''}`}>
@@ -110,10 +108,10 @@ function SiteNavbar() {
                     <div>
                       <p className="site-tools-mega-eyebrow mb-1">{t('nav.developerUtilities')}</p>
                     </div>
-                    <LocaleLink to={TOOLS_PATH} className="site-tools-mega-link">
+                    <a href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer" className="site-tools-mega-link">
                       {t('nav.viewAll')}
-                      <MaterialIcon name="arrow_forward" />
-                    </LocaleLink>
+                      <MaterialIcon name="open_in_new" />
+                    </a>
                   </div>
                   <NavDropdown.Divider className="site-tools-mega-divider" />
                   <div className="site-tools-mega-grid">
@@ -122,10 +120,10 @@ function SiteNavbar() {
                         <NavDropdown.Header className="site-tools-mega-category">{category}</NavDropdown.Header>
                         {categoryTools.map((tool) => (
                           <NavDropdown.Item
-                            as={LocaleLink}
-                            to={tool.path}
+                            href={tool.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={tool.id}
-                            active={isToolActive(tool.path)}
                             className="site-tool-dropdown-item"
                           >
                             <MaterialIcon name={tool.icon} className={`site-tool-dropdown-icon ${tool.iconColor || ''}`} />
@@ -154,22 +152,28 @@ function SiteNavbar() {
 
               <div className="site-navbar-tools-mobile d-lg-none">
 
-                <LocaleLink to={TOOLS_PATH} className={`site-navbar-tools-all-link${pathname === TOOLS_PATH ? ' active' : ''}`}>
-                  <MaterialIcon name="apps" className="me-2" />
+                <a
+                  href={WISHDD_TOOLS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="site-navbar-tools-all-link"
+                >
+                  <MaterialIcon name="open_in_new" className="me-2" />
                   {t('nav.browseAllTools')}
-                </LocaleLink>
+                </a>
                 <p className="site-navbar-tools-label">{t('nav.quickAccess')}</p>
                 <div className="site-navbar-tools-grid">
                   {tools.map((tool) => (
-                    <Nav.Link
-                      as={LocaleLink}
-                      to={tool.path}
+                    <a
+                      href={tool.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       key={tool.id}
-                      className={`site-tool-mobile-link ${isToolActive(tool.path) ? 'active' : ''}`}
+                      className="site-tool-mobile-link"
                     >
                       <MaterialIcon name={tool.icon} className={`me-2 ${tool.iconColor || ''}`} />
                       {tool.title}
-                    </Nav.Link>
+                    </a>
                   ))}
                 </div>
               </div>

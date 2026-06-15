@@ -157,7 +157,8 @@ export default {
         heading: 'Kostenlose Online-Entwickler-Tools',
         headingHighlight: 'Entwickler-Tools',
         intro:
-          '{{count}} kostenlose Utilities für Backend-, Design- und DevOps-Arbeit — Farbauswahl, Palettengenerierung, Hashing, JWT-Dekodierung, Cron-Parsing und mehr. Alles läuft in Ihrem Browser; Ihre Daten verlassen Ihr Gerät nie.',
+          '{{count}} kostenlose Utilities für Backend-, Design- und DevOps-Arbeit — jetzt auf WishDD gehostet. Durchsuchen Sie den Katalog hier und öffnen Sie jedes Tool auf wishdd.com.',
+        openOnWishdd: 'Tools auf WishDD öffnen',
         searchPlaceholder: 'Tools nach Name, Kategorie oder Feature suchen…',
         clearSearch: 'Suche löschen',
         filterByCategory: 'Tools nach Kategorie filtern',
@@ -179,8 +180,11 @@ export default {
         relatedToolsSubtitle: 'Weitere {{category}}-Tools zum Ausprobieren',
         relatedToolsFallback: 'Ausgewählte Tools, die Ihnen auch gefallen könnten',
         browseAllTools: 'Alle Tools ansehen',
-        openTool: 'Tool öffnen',
-        openToolAria: '{{title}} öffnen',
+        openTool: 'Auf WishDD öffnen',
+        openToolAria: '{{title}} auf WishDD öffnen',
+      },
+      redirect: {
+        message: 'Weiterleitung zu WishDD…',
       },
 
       seo: {
@@ -1635,7 +1639,8 @@ export default {
       headingHighlight: 'Entwickler-Tools',
       intro:
         '{{count}} kostenlose Utilities für Backend, Design und DevOps — Farbauswahl, Palettengenerierung, Hashing, JWT-Dekodierung und mehr. Alles läuft in Ihrem Browser.',
-      browseAll: 'Alle {{count}} Tools durchsuchen',
+      browseCatalog: 'Alle {{count}} Tools ansehen',
+      openOnWishdd: 'Auf WishDD öffnen',
     },
 
     notFound: {

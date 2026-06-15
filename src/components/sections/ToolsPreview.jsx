@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import MaterialIcon from '../common/MaterialIcon';
 import LocaleLink from '../common/LocaleLink';
 import ToolCard from '../tools/ToolCard';
-import { useTools, TOOLS_PATH } from '../../data/tools';
+import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 
 function ToolsPreview() {
   const { t } = useTranslation();
@@ -31,9 +31,13 @@ function ToolsPreview() {
         </Row>
 
         <div className="text-center">
-          <Button as={LocaleLink} to={TOOLS_PATH} variant="primary" className="rounded-pill px-4">
+          <Button as={LocaleLink} to={TOOLS_PATH} variant="outline-primary" className="rounded-pill px-4 me-2 mb-2">
             <MaterialIcon name="apps" className="me-2" />
-            {t('toolsPreview.browseAll', { count: tools.length })}
+            {t('toolsPreview.browseCatalog', { count: tools.length })}
+          </Button>
+          <Button href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer" variant="primary" className="rounded-pill px-4 mb-2">
+            <MaterialIcon name="open_in_new" className="me-2" />
+            {t('toolsPreview.openOnWishdd')}
           </Button>
         </div>
       </Container>

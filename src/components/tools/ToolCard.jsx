@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Col from 'react-bootstrap/Col';
 import MaterialIcon from '../common/MaterialIcon';
-import LocaleLink from '../common/LocaleLink';
 
 function ToolCard({ tool, colProps = { xs: 12, md: 6, lg: 3 }, variant = 'default' }) {
   const { t } = useTranslation();
@@ -10,8 +9,10 @@ function ToolCard({ tool, colProps = { xs: 12, md: 6, lg: 3 }, variant = 'defaul
 
   return (
     <Col {...colProps}>
-      <LocaleLink
-        to={tool.path}
+      <a
+        href={tool.url}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`tool-feature-card glass-card h-100 d-flex flex-column text-decoration-none${isLanding ? ' tool-feature-card-landing' : ''}`}
         aria-label={t('tools.layout.openToolAria', { title: tool.longTitle })}
       >
@@ -38,9 +39,9 @@ function ToolCard({ tool, colProps = { xs: 12, md: 6, lg: 3 }, variant = 'defaul
 
         <span className="tool-open-link mt-auto">
           {t('tools.layout.openTool')}
-          <MaterialIcon name="arrow_forward" className="ms-2" />
+          <MaterialIcon name="open_in_new" className="ms-2" />
         </span>
-      </LocaleLink>
+      </a>
     </Col>
   );
 }

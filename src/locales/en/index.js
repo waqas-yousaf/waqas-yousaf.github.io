@@ -134,7 +134,8 @@ export default {
         eyebrow: 'Developer Utilities',
         heading: 'Free Online Developer Tools',
         headingHighlight: 'Developer Tools',
-        intro: '{{count}} free utilities for backend, design, and DevOps work — color picking, palette generation, hashing, JWT decoding, cron parsing, and more. Everything runs in your browser; your data never leaves your device.',
+        intro: '{{count}} free utilities for backend, design, and DevOps work — now hosted on WishDD. Browse the catalog here and open any tool on wishdd.com.',
+        openOnWishdd: 'Open tools on WishDD',
         searchPlaceholder: 'Search tools by name, category, or feature…',
         clearSearch: 'Clear search',
         filterByCategory: 'Filter tools by category',
@@ -154,8 +155,11 @@ export default {
         relatedToolsSubtitle: 'More {{category}} tools to try next',
         relatedToolsFallback: 'Hand-picked tools you might also like',
         browseAllTools: 'Browse all tools',
-        openTool: 'Open tool',
-        openToolAria: 'Open {{title}}',
+        openTool: 'Open on WishDD',
+        openToolAria: 'Open {{title}} on WishDD',
+      },
+      redirect: {
+        message: 'Redirecting to WishDD…',
       },
       seo: {
         toolTitle: '{{longTitle}} — Free {{category}} Tool Online | {{siteName}}',
@@ -1579,7 +1583,8 @@ export default {
       heading: 'Free Online Developer Tools',
       headingHighlight: 'Developer Tools',
       intro: '{{count}} free utilities for backend, design, and DevOps — color picking, palette generation, hashing, JWT decoding, and more. Everything runs in your browser.',
-      browseAll: 'Browse All {{count}} Tools',
+      browseCatalog: 'Browse {{count}} tools',
+      openOnWishdd: 'Open on WishDD',
     },
     notFound: {
       seoTitle: 'Page Not Found | {{siteName}}',
