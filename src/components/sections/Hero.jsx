@@ -7,14 +7,15 @@ import Button from 'react-bootstrap/Button';
 import ProtectedEmail from '../common/ProtectedEmail';
 import MaterialIcon from '../common/MaterialIcon';
 import LocaleLink from '../common/LocaleLink';
+import Waves from '../common/Waves';
 import { ABOUT_PATH } from '../../data/about';
 
 const FALLBACK_TERMINAL_LINES = [
-  'grep -r "works on my machine" ./',
-  'git commit -m "fixed bug (trust me bro)"',
-  'npm install --legacy-peer-deps --no-questions-asked',
-  'php artisan migrate --force --no-regrets',
-  'kubectl rollout undo deploy/api # proactive rollback',
+  'git commit -m "please work (trust me bro)"',
+  'rm -rf node_modules && npm i # there goes 10 minutes',
+  'php artisan db:seed --class=MiracleSeeder',
+  'git blame HEAD # wait, it was me',
+  'docker compose up -d --build && pray',
 ];
 
 function shuffleArray(items) {
@@ -107,10 +108,19 @@ function Hero() {
   return (
     <section id="hero" className="hero-section page-top-offset">
       <div className="hero-bg" aria-hidden="true">
-        <div className="hero-grid" />
-        <div className="hero-orb hero-orb-1" />
-        <div className="hero-orb hero-orb-2" />
-        <div className="hero-orb hero-orb-3" />
+        <Waves
+          lineColor="rgba(29, 78, 216, 0.12)"
+          backgroundColor="transparent"
+          waveSpeedX={0.0125}
+          waveSpeedY={0.005}
+          waveAmpX={32}
+          waveAmpY={16}
+          xGap={12}
+          yGap={36}
+          friction={0.925}
+          tension={0.005}
+          maxCursorMove={100}
+        />
       </div>
 
       <Container className="hero-container py-5">

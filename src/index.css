@@ -5238,3 +5238,135 @@ body {
   font-size: 1.15rem;
   color: #22c55e;
 }
+
+/* ── Logo Loop Component ── */
+.logo-loop-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-loop-container.logo-loop-horizontal {
+  overflow-x: hidden;
+}
+
+.logo-loop-container.logo-loop-vertical {
+  height: 100%;
+  display: inline-block;
+}
+
+.logo-loop-track {
+  display: flex;
+  will-change: transform;
+  user-select: none;
+  position: relative;
+  z-index: 0;
+}
+
+.logo-loop-track.logo-loop-horizontal {
+  flex-direction: row;
+  width: max-content;
+}
+
+.logo-loop-track.logo-loop-vertical {
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+}
+
+.logo-loop-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo-loop-list.logo-loop-vertical {
+  flex-direction: column;
+}
+
+.logo-loop-item {
+  flex: none;
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logo-loop-horizontal .logo-loop-item {
+  margin-right: var(--logoloop-gap);
+}
+
+.logo-loop-vertical .logo-loop-item {
+  margin-bottom: var(--logoloop-gap);
+}
+
+.logo-loop-item a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: opacity 0.2s linear;
+}
+
+.logo-loop-item a:hover {
+  opacity: 0.8;
+}
+
+.logo-loop-item .logo-loop-content-img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-loop-item .logo-loop-content-span {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-loop-scale-hover .logo-loop-item:hover .logo-loop-content-img,
+.logo-loop-scale-hover .logo-loop-item:hover .logo-loop-content-span {
+  transform: scale(1.2);
+}
+
+.logo-loop-fade-overlay {
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo-loop-fade-top {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: clamp(24px, 8%, 120px);
+  background: linear-gradient(to bottom, var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto, #ffffff)) 0%, rgba(255,255,255,0) 100%);
+}
+
+.logo-loop-fade-bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(24px, 8%, 120px);
+  background: linear-gradient(to top, var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto, #ffffff)) 0%, rgba(255,255,255,0) 100%);
+}
+
+.logo-loop-fade-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: clamp(24px, 8%, 120px);
+  background: linear-gradient(to right, var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto, #ffffff)) 0%, rgba(255,255,255,0) 100%);
+}
+
+.logo-loop-fade-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: clamp(24px, 8%, 120px);
+  background: linear-gradient(to left, var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto, #ffffff)) 0%, rgba(255,255,255,0) 100%);
+}
