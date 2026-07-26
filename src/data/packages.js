@@ -10,11 +10,11 @@ export const packagesSeo = {
 
 export const packages = [
   {
-    id: 'dulluhan',
-    name: 'waqas-yousaf/dulluhan',
-    title: 'Dulluhan',
-    githubUrl: 'https://github.com/waqas-yousaf/dulluhan',
-    composerPackage: 'waqas-yousaf/dulluhan',
+    id: 'dullahan',
+    name: 'waqas-yousaf/dullahan',
+    title: 'Dullahan',
+    githubUrl: 'https://github.com/waqas-yousaf/dullahan',
+    composerPackage: 'waqas-yousaf/dullahan',
     techStack: ['PHP', 'Laravel', 'Blade', 'Quill Editor', 'Headless API'],
   },
 ];

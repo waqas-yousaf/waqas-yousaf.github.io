@@ -1543,8 +1543,8 @@ export default {
           title: 'Dars Qatar',
           description: 'Bildungsplattform-Projekt in Verbindung mit WISH Developers & Designs.',
         },
-        dulluhan: {
-          title: 'Dulluhan',
+        dullahan: {
+          title: 'Dullahan',
           description: 'Leichtgewichtiges, leistungsstarkes und funktionsreiches Laravel Headless CMS & Editorial Blog-Paket.',
         },
         'digital-syndicates': {
@@ -1798,7 +1798,7 @@ export default {
     packages: {
       seoTitle: 'Open-Source-Packages | {{name}}',
       seoDescription: 'Entdecken Sie Open-Source-Laravel-, PHP- und JavaScript-Pakete von {{name}}.',
-      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dulluhan, PHP Paket, GitHub',
+      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dullahan, PHP Paket, GitHub',
       eyebrow: 'Open Source',
       heading: 'Open-Source-Pakete',
       headingHighlight: 'Pakete',
@@ -1808,9 +1808,9 @@ export default {
       installCommand: 'Installation',
       featuresTitle: 'Hauptmerkmale',
       items: {
-        dulluhan: {
+        dullahan: {
           tagline: 'Leichtgewichtiges Laravel Headless CMS & Editorial Blog Package',
-          description: 'Dulluhan ist ein leichtgewichtiges, leistungsstarkes und funktionsreiches Laravel Headless CMS & Editorial Blog-Paket. Es bietet ein vollständig sitzungsisoliertes Administrations-Panel, einen hochmodernen Rich-Text-Editor, integrierte SEO-Optimierungen, dynamische Sitemaps, vorgefertigte Blade-Komponenten und eine sichere Headless-JSON-API.',
+          description: 'Dullahan ist ein leichtgewichtiges, leistungsstarkes und funktionsreiches Laravel Headless CMS & Editorial Blog-Paket. Es bietet ein vollständig sitzungsisoliertes Administrations-Panel, einen hochmodernen Rich-Text-Editor, integrierte SEO-Optimierungen, dynamische Sitemaps, vorgefertigte Blade-Komponenten und eine sichere Headless-JSON-API.',
           features: [
             'Quill-gestützter Rich-Text-Editor mit Drag & Drop-Uploads und automatischer Speicherung',
             'Sitzungsisoliertes Admin-Panel getrennt von der Standard-App-Authentifizierung',

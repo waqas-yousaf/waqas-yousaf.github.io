@@ -1508,8 +1508,8 @@ export default {
           title: 'Dars Qatar',
           description: 'Educational platform project associated with WISH Developers & Designs.',
         },
-        dulluhan: {
-          title: 'Dulluhan',
+        dullahan: {
+          title: 'Dullahan',
           description: 'Lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package.',
         },
         'digital-syndicates': {
@@ -1725,7 +1725,7 @@ export default {
     packages: {
       seoTitle: 'Open Source Packages | {{name}}',
       seoDescription: 'Explore open-source Laravel, PHP, and JavaScript packages by {{name}}.',
-      seoKeywords: 'open source, laravel package, headless cms, dulluhan, php package, github',
+      seoKeywords: 'open source, laravel package, headless cms, dullahan, php package, github',
       eyebrow: 'Open Source',
       heading: 'Open Source Packages',
       headingHighlight: 'Packages',
@@ -1735,9 +1735,9 @@ export default {
       installCommand: 'Installation',
       featuresTitle: 'Key Features',
       items: {
-        dulluhan: {
+        dullahan: {
           tagline: 'Lightweight Laravel Headless CMS & Editorial Blog Package',
-          description: 'Dulluhan is a lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package. It provides a fully session-isolated administration panel, a state-of-the-art rich text editor, built-in SEO optimizations, dynamic sitemaps, ready-made Blade components, and a secure headless JSON API.',
+          description: 'Dullahan is a lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package. It provides a fully session-isolated administration panel, a state-of-the-art rich text editor, built-in SEO optimizations, dynamic sitemaps, ready-made Blade components, and a secure headless JSON API.',
           features: [
             'Quill-powered Rich Text Editor with drag & drop uploads and auto-save',
             'Session-isolated admin panel separate from standard app authentication',

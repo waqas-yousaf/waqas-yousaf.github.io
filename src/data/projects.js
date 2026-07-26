@@ -43,13 +43,13 @@ export const projects = [
     techStack: ['JavaScript', 'React'],
   },
   {
-    id: 'dulluhan',
-    title: 'Dulluhan',
+    id: 'dullahan',
+    title: 'Dullahan',
     association: 'Open Source',
     description:
       'Lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package.',
     techStack: ['PHP', 'Laravel', 'Blade', 'Quill Editor', 'Headless API'],
-    url: 'https://github.com/waqas-yousaf/dulluhan',
+    url: 'https://github.com/waqas-yousaf/dullahan',
   },
   {
     id: 'digital-syndicates',
