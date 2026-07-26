@@ -42,7 +42,7 @@ export default {
       acceptAll: 'Accept all',
     },
     hero: {
-      badge: 'Open for Select Projects',
+
       greeting: 'Hi, I\'m',
       name: 'Waqas Yousaf',
       roles: [

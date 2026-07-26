@@ -39,10 +39,7 @@ function Hero() {
         <Row className="justify-content-center text-center">
           <Col lg={8} md={10}>
             <div className={`hero-copy ${mounted ? 'hero-copy-visible' : ''}`}>
-              <span className="hero-badge hero-stagger mx-auto" style={{ '--i': 0 }}>
-                <span className="hero-badge-dot" />
-                {t('hero.badge')}
-              </span>
+
 
               <h1 className="hero-title hero-stagger" style={{ '--i': 2 }}>
                 {t('hero.greeting')}{' '}
