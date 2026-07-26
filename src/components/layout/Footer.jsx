@@ -6,9 +6,10 @@ import Col from 'react-bootstrap/Col';
 import MaterialIcon from '../common/MaterialIcon';
 import ProtectedEmail from '../common/ProtectedEmail';
 import LocaleLink from '../common/LocaleLink';
+import BrandIcon from '../common/BrandIcon';
 import { ABOUT_PATH, socialLinks } from '../../data/about';
 import { PORTFOLIO_PATH } from '../../data/portfolio';
-import { PACKAGES_PATH } from '../../data/packages';
+import { OPENSOURCE_PATH } from '../../data/packages';
 import { SITE_NAME } from '../../config/site';
 import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 import { PRIVACY_PATH, TERMS_PATH } from '../../data/legal';
@@ -32,7 +33,7 @@ function Footer() {
     { to: '/', label: t('footer.home') },
     { to: ABOUT_PATH, label: t('footer.aboutMe') },
     { to: PORTFOLIO_PATH, label: t('nav.portfolio') },
-    { to: PACKAGES_PATH, label: t('nav.packages') },
+    { to: OPENSOURCE_PATH, label: t('nav.opensource') },
     { to: TOOLS_PATH, label: t('footer.developerToolbox') },
   ];
 
@@ -107,7 +108,7 @@ function Footer() {
                   aria-label={t(`social.${link.id}`)}
                   title={t(`social.${link.id}`)}
                 >
-                  <MaterialIcon name={link.icon} />
+                  <BrandIcon name={link.id} />
                 </a>
               ))}
               <ProtectedEmail variant="icon" className="site-footer-email-btn" />

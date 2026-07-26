@@ -11,7 +11,7 @@ import LocaleLink from '../common/LocaleLink';
 import LanguageSwitcher from '../common/LanguageSwitcher';
 import { ABOUT_PATH } from '../../data/about';
 import { PORTFOLIO_PATH } from '../../data/portfolio';
-import { PACKAGES_PATH } from '../../data/packages';
+import { OPENSOURCE_PATH } from '../../data/packages';
 import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 import { stripLocalePrefix } from '../../i18n/paths';
 import { SITE_NAME } from '../../config/site';
@@ -83,18 +83,15 @@ function SiteNavbar() {
             <Nav className="site-navbar-nav ms-lg-auto align-items-lg-center">
               <div className="site-navbar-links">
                 <Nav.Link as={LocaleLink} to={ABOUT_PATH} className={navLinkClass(ABOUT_PATH)}>
-
                   {t('nav.about')}
                 </Nav.Link>
 
                 <Nav.Link as={LocaleLink} to={PORTFOLIO_PATH} className={navLinkClass(PORTFOLIO_PATH)}>
-
                   {t('nav.portfolio')}
                 </Nav.Link>
 
-                <Nav.Link as={LocaleLink} to={PACKAGES_PATH} className={navLinkClass(PACKAGES_PATH)}>
-
-                  {t('nav.packages')}
+                <Nav.Link as={LocaleLink} to={OPENSOURCE_PATH} className={navLinkClass(OPENSOURCE_PATH)}>
+                  {t('nav.opensource')}
                 </Nav.Link>
 
 

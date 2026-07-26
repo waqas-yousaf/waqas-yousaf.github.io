@@ -10,7 +10,7 @@ export default {
       closeNavigation: 'Navigation schließen',
       about: 'Über mich',
       portfolio: 'Portfolio',
-      packages: 'Pakete',
+      opensource: 'Open Source',
       allTools: 'Alle Tools',
       toolbox: 'Toolbox',
       developerUtilities: 'Entwickler-Tools',

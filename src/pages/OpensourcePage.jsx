@@ -13,16 +13,16 @@ import { usePackages } from '../hooks/useLocalizedContent';
 import { useLocale } from '../i18n/useLocale';
 import { localizePath } from '../i18n/paths';
 import { SITE_NAME, SITE_URL } from '../config/site';
-import { PACKAGES_PATH } from '../data/packages';
+import { OPENSOURCE_PATH } from '../data/packages';
 
-function PackagesPage() {
+function OpensourcePage() {
   const { t } = useTranslation();
   const { locale } = useLocale();
   const packages = usePackages();
   const [copiedId, setCopiedId] = useState(null);
 
   const description = t('packages.seoDescription', { name: SITE_NAME });
-  const canonical = `${SITE_URL}${localizePath(PACKAGES_PATH, locale)}`;
+  const canonical = `${SITE_URL}${localizePath(OPENSOURCE_PATH, locale)}`;
 
   const packagesJsonLd = useMemo(
     () => ({
@@ -61,22 +61,22 @@ function PackagesPage() {
         locale={locale}
       />
 
-      <main className="packages-page page-top-offset">
+      <main className="opensource-page page-top-offset">
         <Container className="py-4">
-          <nav aria-label="Breadcrumb" className="packages-breadcrumb mb-4">
-            <LocaleLink to="/" className="packages-back-link">
+          <nav aria-label="Breadcrumb" className="opensource-breadcrumb mb-4">
+            <LocaleLink to="/" className="opensource-back-link">
               <MaterialIcon name="arrow_back" />
               {t('packages.backHome')}
             </LocaleLink>
           </nav>
 
-          <div className="packages-header text-center mb-5">
-            <p className="packages-eyebrow text-uppercase small fw-semibold mb-2">{t('packages.eyebrow')}</p>
+          <div className="opensource-header text-center mb-5">
+            <p className="opensource-eyebrow text-uppercase small fw-semibold mb-2">{t('packages.eyebrow')}</p>
             <h1 className="display-6 fw-bold mb-3">
               {t('packages.heading').replace(t('packages.headingHighlight'), '').trim()}{' '}
               <span className="text-primary">{t('packages.headingHighlight')}</span>
             </h1>
-            <p className="packages-intro mx-auto mb-0 text-secondary" style={{ maxWidth: 650 }}>
+            <p className="opensource-intro mx-auto mb-0 text-secondary" style={{ maxWidth: 650 }}>
               {t('packages.intro')}
             </p>
           </div>
@@ -156,4 +156,4 @@ function PackagesPage() {
   );
 }
 
-export default PackagesPage;
+export default OpensourcePage;

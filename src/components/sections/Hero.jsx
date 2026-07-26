@@ -8,6 +8,7 @@ import ProtectedEmail from '../common/ProtectedEmail';
 import MaterialIcon from '../common/MaterialIcon';
 import LocaleLink from '../common/LocaleLink';
 import Waves from '../common/Waves';
+import BrandIcon from '../common/BrandIcon';
 import { ABOUT_PATH } from '../../data/about';
 
 const FALLBACK_TERMINAL_LINES = [
@@ -29,13 +30,7 @@ function shuffleArray(items) {
   return copy;
 }
 
-const FLOATING_TAGS = [
-  { icon: 'terminal', label: 'Laravel' },
-  { icon: 'device_hub', label: 'Postgres' },
-  { icon: 'cloud', label: 'AWS' },
-  { icon: 'code', label: 'React' },
-  { icon: 'layers', label: 'Docker' },
-];
+
 
 function Hero() {
   const { t, i18n } = useTranslation();
@@ -156,13 +151,13 @@ function Hero() {
 
               <div className="hero-social hero-stagger" style={{ '--i': 7 }}>
                 <a href="https://github.com/waqas-yousaf" target="_blank" rel="noopener noreferrer" aria-label={t('hero.socialGitHub')}>
-                  <MaterialIcon name="code" />
+                  <BrandIcon name="github" />
                 </a>
                 <a href="https://linkedin.com/in/waqasbiz" target="_blank" rel="noopener noreferrer" aria-label={t('hero.socialLinkedIn')}>
-                  <MaterialIcon name="work" />
+                  <BrandIcon name="linkedin" />
                 </a>
                 <a href="https://x.com/imakewebapps" target="_blank" rel="noopener noreferrer" aria-label={t('hero.socialTwitter')}>
-                  <MaterialIcon name="tag" />
+                  <BrandIcon name="x" />
                 </a>
                 <ProtectedEmail variant="icon" />
               </div>
@@ -191,14 +186,6 @@ function Hero() {
                     <span className="hero-terminal-cursor" aria-hidden="true" />
                   </div>
                 </div>
-              </div>
-              <div className="hero-float-tags">
-                {FLOATING_TAGS.map((tag) => (
-                  <div key={tag.label} className="hero-float-tag mt-5">
-                    <MaterialIcon name={tag.icon} />
-                    {tag.label}
-                  </div>
-                ))}
               </div>
             </div>
           </Col>

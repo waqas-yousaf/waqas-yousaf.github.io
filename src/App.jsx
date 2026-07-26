@@ -12,7 +12,7 @@ import ToolsPage from './pages/ToolsPage';
 import WishddToolRedirect from './pages/WishddToolRedirect';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
-import PackagesPage from './pages/PackagesPage';
+import OpensourcePage from './pages/OpensourcePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 const contentRoutes = (
@@ -20,7 +20,7 @@ const contentRoutes = (
     <Route index element={<HomePage />} />
     <Route path="about" element={<AboutPage />} />
     <Route path="portfolio" element={<PortfolioPage />} />
-    <Route path="packages" element={<PackagesPage />} />
+    <Route path="opensource" element={<OpensourcePage />} />
     <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
     <Route path="terms-and-conditions" element={<TermsPage />} />
     <Route path="tools" element={<ToolsPage />} />

@@ -2394,10 +2394,10 @@ body {
 }
 
 .hero-terminal-body {
-  padding: .5rem .75rem 1.25rem;
-  min-height: 200px;
+  padding: 0.75rem 1rem 1.5rem;
+  min-height: 340px;
   font-family: ui-monospace, 'Cascadia Code', monospace;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   line-height: 1.7;
 }
 
@@ -5127,14 +5127,14 @@ body {
   resize: vertical;
 }
 
-/* ── Packages Page ── */
-.packages-page {
+/* ── Opensource Page ── */
+.opensource-page {
   position: relative;
   min-height: 100vh;
   padding-bottom: 5rem;
 }
 
-.packages-breadcrumb .packages-back-link {
+.opensource-breadcrumb .opensource-back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -5145,17 +5145,17 @@ body {
   transition: transform 0.2s ease;
 }
 
-.packages-breadcrumb .packages-back-link:hover {
+.opensource-breadcrumb .opensource-back-link:hover {
   transform: translateX(-4px);
   color: var(--dark);
 }
 
-.packages-header {
+.opensource-header {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.packages-eyebrow {
+.opensource-eyebrow {
   letter-spacing: 0.08em;
   color: #0f5493;
 }

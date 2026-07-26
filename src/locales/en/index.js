@@ -9,7 +9,7 @@ export default {
       closeNavigation: 'Close navigation',
       about: 'About',
       portfolio: 'Portfolio',
-      packages: 'Packages',
+      opensource: 'Open Source',
       toolbox: 'Toolbox',
       developerUtilities: 'Developer Utilities',
       viewAll: 'View all',

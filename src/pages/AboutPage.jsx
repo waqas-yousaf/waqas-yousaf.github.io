@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import PageSeo from '../components/seo/PageSeo';
 import Experience from '../components/sections/Experience';
 import MaterialIcon from '../components/common/MaterialIcon';
+import BrandIcon from '../components/common/BrandIcon';
 import ProtectedEmail from '../components/common/ProtectedEmail';
 import LocaleLink from '../components/common/LocaleLink';
 import { SITE_NAME, SITE_URL } from '../config/site';
@@ -99,7 +100,7 @@ function AboutPage() {
                       className="about-social-link"
                       aria-label={t(`social.${link.id}`)}
                     >
-                      <MaterialIcon name={link.icon} className="me-2" />
+                      <BrandIcon name={link.id} className="me-2" />
                       {t(`social.${link.id}`)}
                     </a>
                   ))}
