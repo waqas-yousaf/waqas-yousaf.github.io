@@ -1500,6 +1500,10 @@ export default {
           title: 'Dars Qatar',
           description: 'Educational platform project associated with WISH Developers & Designs.',
         },
+        dulluhan: {
+          title: 'Dulluhan',
+          description: 'Lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package.',
+        },
         'digital-syndicates': {
           title: 'Digital Syndicates',
           description: 'Corporate platform for a digital agency showcasing software development, digital marketing, and tech solutions with B2B lead-generation features.',
