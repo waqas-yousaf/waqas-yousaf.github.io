@@ -50,19 +50,18 @@ export default {
     },
 
     hero: {
-      badge: 'Verfügbar für Freelance',
+      badge: 'Bereit für neue Projekte',
       greeting: 'Hallo, ich bin',
       name: 'Waqas Yousaf',
       roles: [
         'Backend-Entwickler',
         'DevOps-Ingenieur',
         'Full-Stack-Entwickler',
-        'SaaS-Entwickler',
-        'KI-Entwickler',
-        'ERP-Lösungsanbieter',
+        'SaaS-Architekt',
+        'API-Entwickler',
       ],
       roleLine:
-        'Ich bin {{role}} und verwandle Koffein in skalierbaren, sauberen, gut dokumentierten Code und APIs, die wirklich zuhören.',
+        'Ich bin {{role}} und schreibe performante Laravel-Backends, automatisiere Serverstrukturen und entwickle APIs, die einfach funktionieren. Sauberer Code, der mitwächst.',
       moreAboutMe: 'Mehr über mich',
       terminalTitle: 'waqas@localhost ~ ~/imposter-syndrome',
       terminalLines: [
@@ -97,9 +96,9 @@ export default {
     },
 
     home: {
-      seoTitle: 'Waqas Yousaf | Backend- & DevOps-Entwickler | Portfolio & kostenlose Tools',
+      seoTitle: 'Waqas Yousaf | Laravel Backend- & DevOps-Entwickler',
       seoDescription:
-        'Freelance Backend-Entwickler und DevOps-Ingenieur für Laravel-APIs, Cloud-Infrastruktur und skalierbare Webprodukte. Portfolio entdecken und kostenlose clientseitige Entwickler-Tools nutzen.',
+        'Skalierbares Backend oder sauberes Cloud-Setup gesucht? Ich entwickle schnelle Laravel APIs, SaaS-Architekturen und automatisiere AWS/Docker-Pipelines.',
       seoKeywords:
         'Waqas Yousaf, Backend-Entwickler, DevOps-Ingenieur, Laravel-Entwickler, Freelance-Entwickler, Portfolio, kostenlose Entwickler-Tools',
     },
@@ -108,9 +107,9 @@ export default {
       eyebrow: 'Über mich',
       portraitAlt: 'Porträt von {{name}}',
       intro: [
-        'Ich bin {{name}}, {{tagline}} mit über neun Jahren Erfahrung im Aufbau skalierbarer Webanwendungen — von kleinen Websites bis zu ERP-Lösungen, Cloud Managern, Nachrichtenportalen, Gaming-Plattformen und Microtransaction-Produkten.',
-        'Ich spezialisiere mich auf Laravel, PHP, Python, React und DevOps — von REST-APIs und Microservices bis zu Docker, AWS und CI/CD-Pipelines. Ich habe Produkte mit über 150.000 aktiven Nutzern ausgeliefert und arbeite derzeit mit Teams in Deutschland und Pakistan.',
-        'Wenn ich nicht Backends programmiere oder Infrastruktur optimiere, entwickle ich kostenlose clientseitige Entwickler-Tools für diese Website — damit andere Entwickler schneller arbeiten können, ohne ihre Daten zu gefährden und Zeit zu sparen.',
+        'Ich entwickle Software, die auch unter hoher Last stabil läuft. Seit über neun Jahren konzipiere und realisiere ich skalierbare Webanwendungen — von maßgeschneiderten ERP-Systemen und Cloud-Verwaltungsportalen bis hin zu Gaming-Plattformen und performanten Microservices.',
+        'Mein Schwerpunkt liegt auf sauberem PHP und Laravel, interaktiven React-Frontends und automatisierter Infrastruktur mit AWS, Docker und CI/CD-Pipelines. Die von mir entwickelten Systeme bedienen über 150.000 aktive Nutzer bei minimalen Ladezeiten.',
+        'Neben der Arbeit an Kundenprojekten erstelle ich sichere, rein browserbasierte Tools für Entwickler. Sie laufen komplett lokal, sodass Sie JSON formatieren, Regex testen oder Zugangsdaten generieren können, ohne sensible Daten an einen Server zu senden.',
       ],
       seoTitle: 'Über {{name}} | Laravel, DevOps & Full-Stack-Erfahrung',
       seoDescription:
