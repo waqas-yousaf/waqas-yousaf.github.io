@@ -10,6 +10,7 @@ export default {
       closeNavigation: 'Navigation schließen',
       about: 'Über mich',
       portfolio: 'Portfolio',
+      packages: 'Pakete',
       allTools: 'Alle Tools',
       toolbox: 'Toolbox',
       developerUtilities: 'Entwickler-Tools',
@@ -1781,6 +1782,33 @@ export default {
       jwt: {
         invalidSegments: 'JWT muss Header-, Payload- und Signatur-Segmente haben.',
       },
+    },
+    packages: {
+      seoTitle: 'Open-Source-Packages | {{name}}',
+      seoDescription: 'Entdecken Sie Open-Source-Laravel-, PHP- und JavaScript-Pakete von {{name}}.',
+      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dulluhan, PHP Paket, GitHub',
+      eyebrow: 'Open Source',
+      heading: 'Open-Source-Pakete',
+      headingHighlight: 'Pakete',
+      intro: 'Eine Sammlung von entwicklerfokussierten Paketen, Bibliotheken und Tools, die ich für die Community entwickelt habe und verwalte.',
+      backHome: 'Zurück zur Startseite',
+      viewGitHub: 'Auf GitHub ansehen',
+      installCommand: 'Installation',
+      featuresTitle: 'Hauptmerkmale',
+      items: {
+        dulluhan: {
+          tagline: 'Leichtgewichtiges Laravel Headless CMS & Editorial Blog Package',
+          description: 'Dulluhan ist ein leichtgewichtiges, leistungsstarkes und funktionsreiches Laravel Headless CMS & Editorial Blog-Paket. Es bietet ein vollständig sitzungsisoliertes Administrations-Panel, einen hochmodernen Rich-Text-Editor, integrierte SEO-Optimierungen, dynamische Sitemaps, vorgefertigte Blade-Komponenten und eine sichere Headless-JSON-API.',
+          features: [
+            'Quill-gestützter Rich-Text-Editor mit Drag & Drop-Uploads und automatischer Speicherung',
+            'Sitzungsisoliertes Admin-Panel getrennt von der Standard-App-Authentifizierung',
+            'Sichere Headless-JSON-API mit API-Schlüssel-Autorisierung und Origin-Whitelisting',
+            'Erweiterte SEO-Steuerelemente, Open Graph-Optionen und benutzerdefinierte JSON-LD-Schemas',
+            'Dynamische XML-Sitemap mit automatischer Aktualisierung in Echtzeit',
+            'Flexible Darstellung über vorgefertigte Laravel Blade-Komponenten'
+          ]
+        }
+      }
     },
   },
 };

@@ -9,6 +9,7 @@ export default {
       closeNavigation: 'Close navigation',
       about: 'About',
       portfolio: 'Portfolio',
+      packages: 'Packages',
       toolbox: 'Toolbox',
       developerUtilities: 'Developer Utilities',
       viewAll: 'View all',
@@ -1708,6 +1709,33 @@ export default {
       jwt: {
         invalidSegments: 'JWT must have header, payload, and signature segments.',
       },
+    },
+    packages: {
+      seoTitle: 'Open Source Packages | {{name}}',
+      seoDescription: 'Explore open-source Laravel, PHP, and JavaScript packages by {{name}}.',
+      seoKeywords: 'open source, laravel package, headless cms, dulluhan, php package, github',
+      eyebrow: 'Open Source',
+      heading: 'Open Source Packages',
+      headingHighlight: 'Packages',
+      intro: 'A collection of developer-focused packages, libraries, and tools I have built and maintained for the community.',
+      backHome: 'Back to Home',
+      viewGitHub: 'View on GitHub',
+      installCommand: 'Installation',
+      featuresTitle: 'Key Features',
+      items: {
+        dulluhan: {
+          tagline: 'Lightweight Laravel Headless CMS & Editorial Blog Package',
+          description: 'Dulluhan is a lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package. It provides a fully session-isolated administration panel, a state-of-the-art rich text editor, built-in SEO optimizations, dynamic sitemaps, ready-made Blade components, and a secure headless JSON API.',
+          features: [
+            'Quill-powered Rich Text Editor with drag & drop uploads and auto-save',
+            'Session-isolated admin panel separate from standard app authentication',
+            'Secure headless JSON API with key authorization and origin whitelisting',
+            'Advanced SEO controls, Open Graph options, and custom JSON-LD schemas',
+            'Dynamic XML sitemap auto-updating in real-time',
+            'Flexible rendering via pre-built Laravel Blade components'
+          ]
+        }
+      }
     },
   },
 };

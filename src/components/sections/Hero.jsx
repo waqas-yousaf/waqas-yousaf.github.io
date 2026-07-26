@@ -115,7 +115,7 @@ function Hero() {
 
       <Container className="hero-container py-5">
         <Row className="align-items-center g-5">
-          <Col lg={6} className="p-0">
+          <Col lg={6} className="ps-lg-0 pe-lg-0">
             <div className={`hero-copy ${mounted ? 'hero-copy-visible' : ''}`}>
               <span className="hero-badge hero-stagger" style={{ '--i': 0 }}>
                 <span className="hero-badge-dot" />

@@ -7,6 +7,7 @@ import {
   allTechnologies,
 } from '../data/skills.js';
 import { projects as projectsBase } from '../data/projects.js';
+import { packages as packagesBase } from '../data/packages.js';
 import { SITE_NAME, SITE_URL } from '../config/site.js';
 
 const skillStatKeys = ['yearsInProduction', 'activeUsersServed', 'cloudProductsShipped', 'projectsDelivered'];
@@ -134,3 +135,18 @@ export function useTermsSections() {
     [t, i18n.language]
   );
 }
+
+export function usePackages() {
+  const { t, i18n } = useTranslation();
+  return useMemo(
+    () =>
+      packagesBase.map((pkg) => ({
+        ...pkg,
+        tagline: t(`packages.items.${pkg.id}.tagline`),
+        description: t(`packages.items.${pkg.id}.description`),
+        features: t(`packages.items.${pkg.id}.features`, { returnObjects: true }),
+      })),
+    [t, i18n.language]
+  );
+}
+
