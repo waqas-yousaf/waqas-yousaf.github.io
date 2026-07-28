@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import ProtectedEmail from '../common/ProtectedEmail';
 import LocaleLink from '../common/LocaleLink';
 import BrandIcon from '../common/BrandIcon';
+import Waves from '../common/Waves';
 import { ABOUT_PATH } from '../../data/about';
 
 function Hero() {
@@ -29,11 +30,20 @@ function Hero() {
 
   return (
     <section id="hero" className="hero-section page-top-offset">
-      <div className="hero-bg-shapes" aria-hidden="true">
-        <div className="hero-shape hero-shape-triangle" />
-        <div className="hero-shape hero-shape-square" />
-        <div className="hero-shape hero-shape-pill" />
-      </div>
+      <Waves
+        lineColor="#fff"
+        backgroundColor="rgba(255, 255, 255, 0.2)"
+        waveSpeedX={0.02}
+        waveSpeedY={0.01}
+        waveAmpX={40}
+        waveAmpY={20}
+        friction={0.9}
+        tension={0.01}
+        maxCursorMove={120}
+        xGap={12}
+        yGap={36}
+      />
+
 
       <Container className="hero-container py-5">
         <Row className="justify-content-center text-center">

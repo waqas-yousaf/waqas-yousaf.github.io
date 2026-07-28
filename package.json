@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "face-api.js": "^0.22.2",
     "i18next": "^26.3.0",
     "i18next-browser-languagedetector": "^8.2.1",
+    "postprocessing": "^6.39.4",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
     "react-github-calendar": "^5.0.6",
     "react-i18next": "^17.0.8",
-    "react-router-dom": "^7.1.1"
+    "react-router-dom": "^7.1.1",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
