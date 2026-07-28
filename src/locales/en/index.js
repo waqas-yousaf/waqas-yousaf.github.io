@@ -143,8 +143,8 @@ export default {
         eyebrow: 'Developer Utilities',
         heading: 'Free Online Developer Tools',
         headingHighlight: 'Developer Tools',
-        intro: '{{count}} free utilities for backend, design, and DevOps work — now hosted on WishDD. Browse the catalog here and open any tool on wishdd.com.',
-        openOnWishdd: 'Open tools on WishDD',
+        intro: '{{count}} free utilities for backend, design, and DevOps work — now hosted on WISHDD. Browse the catalog here and open any tool on wishdd.com.',
+        openOnWishdd: 'Open tools on WISHDD',
         searchPlaceholder: 'Search tools by name, category, or feature…',
         clearSearch: 'Clear search',
         filterByCategory: 'Filter tools by category',
@@ -164,11 +164,11 @@ export default {
         relatedToolsSubtitle: 'More {{category}} tools to try next',
         relatedToolsFallback: 'Hand-picked tools you might also like',
         browseAllTools: 'Browse all tools',
-        openTool: 'Open on WishDD',
-        openToolAria: 'Open {{title}} on WishDD',
+        openTool: 'Open on WISHDD',
+        openToolAria: 'Open {{title}} on WISHDD',
       },
       redirect: {
-        message: 'Redirecting to WishDD…',
+        message: 'Redirecting to WISHDD…',
       },
       seo: {
         toolTitle: '{{longTitle}} — Free {{category}} Tool Online | {{siteName}}',
@@ -1561,7 +1561,7 @@ export default {
           description: 'Corporate web application for IT infrastructure, green energy, and AI/ML business consulting with B2B lead-generation integrations.',
         },
         wishdd: {
-          title: 'WishDD',
+          title: 'WISHDD',
           description: 'Corporate web platform for a full-service digital agency showcasing custom software, AI, and e-commerce solutions with interactive project portfolio.',
         },
         wizgates: {
@@ -1597,7 +1597,7 @@ export default {
       headingHighlight: 'Developer Tools',
       intro: '{{count}} free utilities for backend, design, and DevOps — color picking, palette generation, hashing, JWT decoding, and more. Everything runs in your browser.',
       browseCatalog: 'Browse {{count}} tools',
-      openOnWishdd: 'Open on WishDD',
+      openOnWishdd: 'Open on WISHDD',
     },
     notFound: {
       seoTitle: 'Page Not Found | {{siteName}}',

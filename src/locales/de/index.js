@@ -166,8 +166,8 @@ export default {
         heading: 'Kostenlose Online-Entwickler-Tools',
         headingHighlight: 'Entwickler-Tools',
         intro:
-          '{{count}} kostenlose Utilities für Backend-, Design- und DevOps-Arbeit — jetzt auf WishDD gehostet. Durchsuchen Sie den Katalog hier und öffnen Sie jedes Tool auf wishdd.com.',
-        openOnWishdd: 'Tools auf WishDD öffnen',
+          '{{count}} kostenlose Utilities für Backend-, Design- und DevOps-Arbeit — jetzt auf WISHDD gehostet. Durchsuchen Sie den Katalog hier und öffnen Sie jedes Tool auf wishdd.com.',
+        openOnWishdd: 'Tools auf WISHDD öffnen',
         searchPlaceholder: 'Tools nach Name, Kategorie oder Feature suchen…',
         clearSearch: 'Suche löschen',
         filterByCategory: 'Tools nach Kategorie filtern',
@@ -189,11 +189,11 @@ export default {
         relatedToolsSubtitle: 'Weitere {{category}}-Tools zum Ausprobieren',
         relatedToolsFallback: 'Ausgewählte Tools, die Ihnen auch gefallen könnten',
         browseAllTools: 'Alle Tools ansehen',
-        openTool: 'Auf WishDD öffnen',
-        openToolAria: '{{title}} auf WishDD öffnen',
+        openTool: 'Auf WISHDD öffnen',
+        openToolAria: '{{title}} auf WISHDD öffnen',
       },
       redirect: {
-        message: 'Weiterleitung zu WishDD…',
+        message: 'Weiterleitung zu WISHDD…',
       },
 
       seo: {
@@ -1608,7 +1608,7 @@ export default {
             'Unternehmens-Webanwendung für IT-Infrastruktur, grüne Energie und KI/ML-Business-Consulting mit B2B-Lead-Generation-Integrationen.',
         },
         wishdd: {
-          title: 'WishDD',
+          title: 'WISHDD',
           description:
             'Unternehmens-Webplattform für eine Full-Service-Digitalagentur mit Custom Software, KI und E-Commerce-Lösungen sowie interaktivem Projektportfolio.',
         },
@@ -1653,7 +1653,7 @@ export default {
       intro:
         '{{count}} kostenlose Utilities für Backend, Design und DevOps — Farbauswahl, Palettengenerierung, Hashing, JWT-Dekodierung und mehr. Alles läuft in Ihrem Browser.',
       browseCatalog: 'Alle {{count}} Tools ansehen',
-      openOnWishdd: 'Auf WishDD öffnen',
+      openOnWishdd: 'Auf WISHDD öffnen',
     },
 
     notFound: {

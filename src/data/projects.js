@@ -160,7 +160,7 @@ export const projects = [
   },
   {
     id: 'wishdd',
-    title: 'WishDD',
+    title: 'WISHDD',
     association: 'WISH Developers & Designs',
     description:
       'Corporate web platform for a full-service digital agency showcasing custom software, AI, and e-commerce solutions with interactive project portfolio.',
