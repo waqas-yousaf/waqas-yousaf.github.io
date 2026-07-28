@@ -13,7 +13,7 @@ export default {
       toolbox: 'Toolbox',
       developerUtilities: 'Developer Utilities',
       viewAll: 'View all',
-      hireMe: 'Hire Me',
+      hireMe: 'Contact',
       browseAllTools: 'Browse All Tools',
       quickAccess: 'Quick access',
       language: 'Language',

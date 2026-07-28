@@ -7,7 +7,7 @@
 
   --accent-color: #D02020;        /* Bauhaus Red (Primary) */
   --accent-foreground: #FFFFFF;
-  --secondary-color: #1040C0;     /* Bauhaus Blue */
+  --secondary-color: #1177d7;     /* Bauhaus Blue */
   --tertiary-color: #F0C020;      /* Bauhaus Yellow */
   --quaternary-color: #121212;    /* Black */
 
@@ -1812,18 +1812,33 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
   max-width: none;
 }
 
+.site-header-brand {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  border: 2px solid #000;
+  padding: 0.35rem 0.75rem;
+  background-color: var(--accent-color);
+}
+
 .site-footer-brand {
   display: inline-flex;
   align-items: center;
   color: #ffffff !important;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.04em;
   text-decoration: none;
   margin-bottom: 0.75rem;
   font-family: 'Outfit', sans-serif;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   padding: 0.35rem 0.75rem;
   background-color: var(--accent-color);
 }

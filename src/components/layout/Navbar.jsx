@@ -53,13 +53,7 @@ function SiteNavbar() {
       >
         <Container fluid className={`site-navbar-container${isToolsRoute ? ' site-navbar-container--tools' : ''}`}>
           <Navbar.Brand as={LocaleLink} to="/" className="site-navbar-brand">
-            <span className="site-navbar-brand-icon" aria-hidden="true">
-              <MaterialIcon name="code" />
-            </span>
-            <span className="site-navbar-brand-text">
-              <span className="site-navbar-brand-name">{SITE_NAME}</span>
-              <span className="site-navbar-brand-tag">{t('site.brandTag')}</span>
-            </span>
+            <a class="site-header-brand" href="/" data-discover="true"><span class="material-icons me-2" aria-hidden="true">code</span>Waqas Yousaf</a>
           </Navbar.Brand>
 
           <Navbar.Toggle

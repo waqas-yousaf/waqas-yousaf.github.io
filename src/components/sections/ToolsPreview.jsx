@@ -16,12 +16,12 @@ function ToolsPreview() {
     <section id="tools" className="py-5 section-tools" aria-labelledby="tools-preview-heading">
       <Container>
         <div className="text-center mb-5">
-          <p className="text-primary fw-semibold text-uppercase small mb-2">{t('toolsPreview.eyebrow')}</p>
+          <p className="text-black fw-semibold text-uppercase small mb-2">{t('toolsPreview.eyebrow')}</p>
           <h2 id="tools-preview-heading" className="display-6 fw-bold mb-3 text-primary">
             {t('toolsPreview.heading').replace(t('toolsPreview.headingHighlight'), '').trim()}{' '}
             <span className="text-primary">{t('toolsPreview.headingHighlight')}</span>
           </h2>
-          <p className="lead text-primary mx-auto tools-intro">{t('toolsPreview.intro', { count: tools.length })}</p>
+          <p className="lead text-black mx-auto tools-intro">{t('toolsPreview.intro', { count: tools.length })}</p>
         </div>
 
         <Row className="g-4 mb-4">
