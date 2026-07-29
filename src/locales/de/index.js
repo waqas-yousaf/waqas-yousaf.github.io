@@ -1547,6 +1547,10 @@ export default {
           title: 'Dullahan',
           description: 'Leichtgewichtiges, leistungsstarkes und funktionsreiches Laravel Headless CMS & Editorial Blog-Paket.',
         },
+        'laravel-config-doctor': {
+          title: 'Laravel Config Doctor',
+          description: 'Auditieren Sie die Laravel-Konfiguration und die Verwendung von Umgebungsvariablen, bevor sie in die Produktion gelangen.',
+        },
         'digital-syndicates': {
           title: 'Digital Syndicates',
           description:
@@ -1798,7 +1802,7 @@ export default {
     packages: {
       seoTitle: 'Open-Source-Packages | {{name}}',
       seoDescription: 'Entdecken Sie Open-Source-Laravel-, PHP- und JavaScript-Pakete von {{name}}.',
-      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dullahan, PHP Paket, GitHub',
+      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dullahan, PHP Paket, GitHub, Laravel-Config-Doctor, Config Doctor',
       eyebrow: 'Open Source',
       heading: 'Open-Source-Pakete',
       headingHighlight: 'Pakete',
@@ -1818,6 +1822,18 @@ export default {
             'Erweiterte SEO-Steuerelemente, Open Graph-Optionen und benutzerdefinierte JSON-LD-Schemas',
             'Dynamische XML-Sitemap mit automatischer Aktualisierung in Echtzeit',
             'Flexible Darstellung über vorgefertigte Laravel Blade-Komponenten'
+          ]
+        },
+        'laravel-config-doctor': {
+          tagline: 'Auditieren Sie die Laravel-Konfiguration und die Verwendung von Umgebungsvariablen, bevor sie in die Produktion gelangen.',
+          description: 'Laravel Config Doctor auditiert die Verwendung von Umgebungsvariablen, die Konfigurationssicherheit und die Integrität der Umgebung Ihrer Laravel-Anwendung, bevor Sie diese in die Produktion deployen. Es scannt Ihre Codebasis nach env()-Aufrufen außerhalb von Konfigurationsdateien, erkennt comittete Secrets und überprüft die Sicherheit der Umgebungstreiber.',
+          features: [
+            'AST-ähnliches Parsing ausgewogener Klammern für verschachtelte env()-Hilfsaufrufe',
+            'Erkennung comitteter Secrets in Umgebungsvariablen-Templates (wie .env.example)',
+            'Integritätsprüfung der Umgebung mit Warnungen bei fehlenden Schlüsseln in der .env',
+            'Sicherheitsprüfungen der Treiber für Sync-Queues, Array-Caches, Log-Mailer oder lokalen Speicher',
+            'Config-Cache-Diffing zur Erkennung von Unterschieden zwischen geladenen und gecachten Konfigurationen',
+            'CI-fähige Exit-Codes und JSON-Formatierungsoptionen für Pipeline-Integrationen'
           ]
         }
       }

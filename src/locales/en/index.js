@@ -1512,6 +1512,10 @@ export default {
           title: 'Dullahan',
           description: 'Lightweight, high-performance, and feature-rich Laravel Headless CMS & Editorial Blog Package.',
         },
+        'laravel-config-doctor': {
+          title: 'Laravel Config Doctor',
+          description: 'Audit Laravel configuration and environment usage before it reaches production.',
+        },
         'digital-syndicates': {
           title: 'Digital Syndicates',
           description: 'Corporate platform for a digital agency showcasing software development, digital marketing, and tech solutions with B2B lead-generation features.',
@@ -1725,7 +1729,7 @@ export default {
     packages: {
       seoTitle: 'Open Source Packages | {{name}}',
       seoDescription: 'Explore open-source Laravel, PHP, and JavaScript packages by {{name}}.',
-      seoKeywords: 'open source, laravel package, headless cms, dullahan, php package, github',
+      seoKeywords: 'open source, laravel package, headless cms, dullahan, php package, github, laravel-config-doctor, config doctor',
       eyebrow: 'Open Source',
       heading: 'Open Source Packages',
       headingHighlight: 'Packages',
@@ -1745,6 +1749,18 @@ export default {
             'Advanced SEO controls, Open Graph options, and custom JSON-LD schemas',
             'Dynamic XML sitemap auto-updating in real-time',
             'Flexible rendering via pre-built Laravel Blade components'
+          ]
+        },
+        'laravel-config-doctor': {
+          tagline: 'Audit Laravel configuration and environment usage before it reaches production.',
+          description: 'Laravel Config Doctor audits your Laravel application\'s environment variable usage, config safety, and environment integrity before you deploy to production. It scans your codebase for env() calls outside config files, detects committed secrets, and verifies environment driver security.',
+          features: [
+            'AST-like Balanced Parenthesis Parsing for nested env() helper calls',
+            'Committed Secret Detection in environment templates (like .env.example)',
+            'Environment Integrity Verification warning if keys are missing from .env',
+            'Driver Security Checks for sync queues, array cache, log mailers, or local storage',
+            'Config Cache Diffing to identify changes between loaded and cached configs',
+            'CI-ready exit codes and JSON formatting options for pipeline integrations'
           ]
         }
       }

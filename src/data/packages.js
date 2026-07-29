@@ -17,4 +17,12 @@ export const packages = [
     composerPackage: 'waqas-yousaf/dullahan',
     techStack: ['PHP', 'Laravel', 'Blade', 'Quill Editor', 'Headless API'],
   },
+  {
+    id: 'laravel-config-doctor',
+    name: 'waqas-yousaf/laravel-config-doctor',
+    title: 'Laravel Config Doctor',
+    githubUrl: 'https://github.com/waqas-yousaf/laravel-config-doctor',
+    composerPackage: 'waqas-yousaf/laravel-config-doctor',
+    techStack: ['PHP', 'Laravel', 'CLI', 'Static Analysis'],
+  },
 ];

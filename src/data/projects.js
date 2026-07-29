@@ -52,6 +52,15 @@ export const projects = [
     url: 'https://github.com/waqas-yousaf/dullahan',
   },
   {
+    id: 'laravel-config-doctor',
+    title: 'Laravel Config Doctor',
+    association: 'Open Source',
+    description:
+      'Audit Laravel configuration and environment usage before it reaches production.',
+    techStack: ['PHP', 'Laravel', 'CLI', 'Static Analysis'],
+    url: 'https://github.com/waqas-yousaf/laravel-config-doctor',
+  },
+  {
     id: 'digital-syndicates',
     title: 'Digital Syndicates',
     association: 'Wizgates Technology LLC',

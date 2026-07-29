@@ -20,7 +20,7 @@ function CompaniesCarousel() {
         </div>
       </Container>
 
-      <div className="companies-carousel-wrap py-4">
+      <div className="companies-carousel-wrap py-2">
         <LogoLoop
           logos={logoItems}
           speed={50}
