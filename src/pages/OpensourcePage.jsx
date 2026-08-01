@@ -118,11 +118,16 @@ function OpensourcePage() {
                     <div className="mb-4">
                       <h3 className="h6 fw-bold text-dark mb-3">{t('packages.installCommand')}</h3>
                       <div className="package-installation-box">
-                        <pre className="package-installation-code">composer require {pkg.composerPackage}</pre>
+                        <pre className="package-installation-code">
+                          {pkg.npmPackage ? `npm install ${pkg.npmPackage}` : `composer require ${pkg.composerPackage}`}
+                        </pre>
                         <button
                           type="button"
                           className="package-copy-btn"
-                          onClick={() => handleCopy(pkg.id, `composer require ${pkg.composerPackage}`)}
+                          onClick={() => handleCopy(
+                            pkg.id,
+                            pkg.npmPackage ? `npm install ${pkg.npmPackage}` : `composer require ${pkg.composerPackage}`
+                          )}
                           aria-label="Copy installation command"
                         >
                           <MaterialIcon name={copiedId === pkg.id ? 'check' : 'content_copy'} />

@@ -61,6 +61,15 @@ export const projects = [
     url: 'https://github.com/waqas-yousaf/laravel-config-doctor',
   },
   {
+    id: 'inkstack',
+    title: 'Inkstack',
+    association: 'Open Source',
+    description:
+      'Lightweight, database-free flat-file blog/CMS core engine built with Node.js and TypeScript.',
+    techStack: ['Node.js', 'TypeScript', 'Fastify', 'Zod', 'Argon2id', 'Flat-file CMS'],
+    url: 'https://github.com/waqas-yousaf/Inkstack',
+  },
+  {
     id: 'digital-syndicates',
     title: 'Digital Syndicates',
     association: 'Wizgates Technology LLC',

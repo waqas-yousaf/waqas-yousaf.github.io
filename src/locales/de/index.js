@@ -1551,6 +1551,10 @@ export default {
           title: 'Laravel Config Doctor',
           description: 'Auditieren Sie die Laravel-Konfiguration und die Verwendung von Umgebungsvariablen, bevor sie in die Produktion gelangen.',
         },
+        inkstack: {
+          title: 'Inkstack',
+          description: 'Leichtgewichtige, datenbankfreie Flat-File-Blog- und CMS-Kernkomponente, die mit Node.js und TypeScript entwickelt wurde.',
+        },
         'digital-syndicates': {
           title: 'Digital Syndicates',
           description:
@@ -1802,7 +1806,7 @@ export default {
     packages: {
       seoTitle: 'Open-Source-Packages | {{name}}',
       seoDescription: 'Entdecken Sie Open-Source-Laravel-, PHP- und JavaScript-Pakete von {{name}}.',
-      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dullahan, PHP Paket, GitHub, Laravel-Config-Doctor, Config Doctor',
+      seoKeywords: 'Open Source, Laravel Package, Headless CMS, Dullahan, PHP Paket, GitHub, Laravel-Config-Doctor, Config Doctor, Inkstack, Flat-File, Node.js Paket',
       eyebrow: 'Open Source',
       heading: 'Open-Source-Pakete',
       headingHighlight: 'Pakete',
@@ -1834,6 +1838,19 @@ export default {
             'Sicherheitsprüfungen der Treiber für Sync-Queues, Array-Caches, Log-Mailer oder lokalen Speicher',
             'Config-Cache-Diffing zur Erkennung von Unterschieden zwischen geladenen und gecachten Konfigurationen',
             'CI-fähige Exit-Codes und JSON-Formatierungsoptionen für Pipeline-Integrationen'
+          ]
+        },
+        inkstack: {
+          tagline: 'Moderne, datenbankfreie Flat-File-Blog- und CMS-Kernkomponente für Node.js 22+.',
+          description: 'Inkstack ist eine moderne, datenbankfreie Flat-File-Blog- und CMS-Kernkomponente für Node.js 22+. Built mit TypeScript bietet es hochperformante, atomare Dateisystem-Persistenz, Dateisperren pro Ressource, integrierte Argon2id/CSRF-Authentifizierung, SEO-Tools und einen vorkonfigurierten Fastify-API-Server.',
+          features: [
+            'Atomare Dateisystem-Persistenz, die temporäre Dateien schreibt, um Datenkorruption zu verhindern',
+            'Concurrency-Dateisperrung pro Ressource zur Konfliktvermeidung mit proper-lockfile',
+            'Zod-validierte Repositories für Beiträge, Kategorien, Autoren und Sitzungen',
+            'Automatisch neu aufbauende JSON-Indizes für schnelles Abfragen, Paginieren und Sortieren',
+            'Integrierte Sicherheit einschließlich CSRF-Validierung, signierten Cookies und Argon2id-Hashing',
+            'Automatische SEO-Generierung für Sitemaps, RSS/Atom-Feeds und JSON-LD-Schemas',
+            'Fastify-gestützte CMS-Kern-API mit vorkonfigurierten Cookie-, Multipart- und Fehler-Plugins'
           ]
         }
       }

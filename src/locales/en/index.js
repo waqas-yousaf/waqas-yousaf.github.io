@@ -1516,6 +1516,10 @@ export default {
           title: 'Laravel Config Doctor',
           description: 'Audit Laravel configuration and environment usage before it reaches production.',
         },
+        inkstack: {
+          title: 'Inkstack',
+          description: 'Lightweight, database-free flat-file blog/CMS core engine built with Node.js and TypeScript.',
+        },
         'digital-syndicates': {
           title: 'Digital Syndicates',
           description: 'Corporate platform for a digital agency showcasing software development, digital marketing, and tech solutions with B2B lead-generation features.',
@@ -1729,7 +1733,7 @@ export default {
     packages: {
       seoTitle: 'Open Source Packages | {{name}}',
       seoDescription: 'Explore open-source Laravel, PHP, and JavaScript packages by {{name}}.',
-      seoKeywords: 'open source, laravel package, headless cms, dullahan, php package, github, laravel-config-doctor, config doctor',
+      seoKeywords: 'open source, laravel package, headless cms, dullahan, php package, github, laravel-config-doctor, config doctor, inkstack, flat-file cms, nodejs package',
       eyebrow: 'Open Source',
       heading: 'Open Source Packages',
       headingHighlight: 'Packages',
@@ -1761,6 +1765,19 @@ export default {
             'Driver Security Checks for sync queues, array cache, log mailers, or local storage',
             'Config Cache Diffing to identify changes between loaded and cached configs',
             'CI-ready exit codes and JSON formatting options for pipeline integrations'
+          ]
+        },
+        inkstack: {
+          tagline: 'Modern, database-free, flat-file blog and CMS core foundation for Node.js 22+.',
+          description: 'Inkstack is a modern, database-free, flat-file blog and CMS core foundation for Node.js 22+. Built with TypeScript, it provides high-performance, atomic file-system persistence, per-resource locking, built-in Argon2id/CSRF authentication, SEO tools, and a pre-configured Fastify API builder.',
+          features: [
+            'Atomic File-System Persistence writing temporary files first to prevent data corruption',
+            'Per-Resource Concurrency Locking preventing conflicts with proper-lockfile',
+            'Zod-Validated Repositories for Posts, Categories, Authors, and Sessions',
+            'Auto-Rebuilding JSON Indexes for blazing fast querying, pagination, and sorting',
+            'Built-in Security including CSRF validation, signed cookies, and Argon2id hashing',
+            'Automated SEO Generation for sitemaps, RSS/Atom feeds, and JSON-LD schemas',
+            'Fastify-powered CMS Core API with cookie, multipart, and error plugins pre-configured'
           ]
         }
       }

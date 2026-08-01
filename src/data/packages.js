@@ -25,4 +25,12 @@ export const packages = [
     composerPackage: 'waqas-yousaf/laravel-config-doctor',
     techStack: ['PHP', 'Laravel', 'CLI', 'Static Analysis'],
   },
+  {
+    id: 'inkstack',
+    name: 'waqas-yousaf/Inkstack',
+    title: 'Inkstack',
+    githubUrl: 'https://github.com/waqas-yousaf/Inkstack',
+    npmPackage: 'inkstack',
+    techStack: ['Node.js', 'TypeScript', 'Fastify', 'Zod', 'Argon2id', 'Flat-file CMS'],
+  },
 ];
