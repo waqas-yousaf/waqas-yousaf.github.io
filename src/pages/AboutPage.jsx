@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -53,7 +52,7 @@ function AboutPage() {
       />
 
       <main className="about-page page-top-offset">
-        <Container className="py-5" style={{ maxWidth: 1300 }}>
+        <div className="container-fluid px-3 px-md-5 py-5">
           <nav aria-label="Breadcrumb" className="about-breadcrumb mb-4">
             <LocaleLink to="/" className="about-back-link">
               <MaterialIcon name="arrow_back" />
@@ -118,7 +117,7 @@ function AboutPage() {
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
 
         <Experience />
         <Skills />

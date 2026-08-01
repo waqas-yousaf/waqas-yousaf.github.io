@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import { companies } from '../../data/companies';
 import LogoLoop from '../common/LogoLoop';
 
@@ -12,13 +11,13 @@ const logoItems = companies.map((company) => ({
 function CompaniesCarousel() {
   return (
     <section className="companies-carousel-section" aria-labelledby="companies-carousel-heading">
-      <Container>
+      <div className="container-fluid px-3 px-md-5">
         <div className="companies-carousel-header text-center">
           <h2 id="companies-carousel-heading" className="h5 fw-bold mb-0">
             {/* Keeping heading node semantic but empty or title if needed */}
           </h2>
         </div>
-      </Container>
+      </div>
 
       <div className="companies-carousel-wrap py-2">
         <LogoLoop

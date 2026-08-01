@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -150,7 +149,7 @@ function ToolsPage() {
 
       <main className="tools-landing page-top-offset">
         <section className="tools-landing-hero">
-          <Container className="py-4 py-lg-5">
+          <div className="container-fluid px-3 px-md-5 py-4 py-lg-5">
             <nav aria-label="Breadcrumb" className="tools-landing-breadcrumb mb-4">
               <LocaleLink to="/" className="tools-landing-back-link">
                 <MaterialIcon name="arrow_back" />
@@ -210,11 +209,11 @@ function ToolsPage() {
                 </Col>
               ))}
             </Row>
-          </Container>
+          </div>
         </section>
 
         <div className="tools-landing-grid pb-5">
-          <Container>
+          <div className="container-fluid px-3 px-md-5">
             <div className="tools-landing-filters" role="toolbar" aria-label={t('tools.landing.filterByCategory')}>
               <button
                 type="button"
@@ -281,7 +280,7 @@ function ToolsPage() {
                 );
               })
             )}
-          </Container>
+          </div>
         </div>
       </main>
     </>

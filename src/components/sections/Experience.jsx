@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Badge from 'react-bootstrap/Badge';
 import MaterialIcon from '../common/MaterialIcon';
 import { useWorkHistory } from '../../hooks/useLocalizedContent';
@@ -23,7 +22,7 @@ function Experience() {
 
   return (
     <section id="experience" className="experience-section py-5">
-      <Container>
+      <div className="container-fluid px-3 px-md-5">
         <div className="text-center mb-5">
           <p className="experience-eyebrow text-uppercase small fw-semibold mb-2">{t('experience.eyebrow')}</p>
           <h2 className="display-6 fw-bold mb-3 experience-heading">
@@ -94,7 +93,7 @@ function Experience() {
             );
           })}
         </ol>
-      </Container>
+      </div>
     </section>
   );
 }

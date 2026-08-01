@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -51,7 +50,7 @@ function SiteNavbar() {
         expanded={navExpanded}
         onToggle={setNavExpanded}
       >
-        <Container fluid className={`site-navbar-container${isToolsRoute ? ' site-navbar-container--tools' : ''}`}>
+        <div className={`container-fluid site-navbar-container${isToolsRoute ? ' site-navbar-container--tools' : ''}`}>
           <Navbar.Brand as={LocaleLink} to="/" className="site-navbar-brand">
             <a class="site-header-brand" href="/" data-discover="true"><span class="material-icons me-2" aria-hidden="true">code</span>Waqas Yousaf</a>
           </Navbar.Brand>
@@ -176,7 +175,7 @@ function SiteNavbar() {
               </div>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </header>
   );

@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import PageSeo from '../components/seo/PageSeo';
 import MaterialIcon from '../components/common/MaterialIcon';
 import LocaleLink from '../components/common/LocaleLink';
@@ -47,7 +46,7 @@ function PortfolioPage() {
       />
 
       <main className="portfolio-page page-top-offset">
-        <Container className="py-4">
+        <div className="container-fluid px-3 px-md-5 py-4">
           <nav aria-label="Breadcrumb" className="portfolio-breadcrumb mb-4">
             <LocaleLink to="/" className="portfolio-back-link">
               <MaterialIcon name="arrow_back" />
@@ -63,7 +62,7 @@ function PortfolioPage() {
             </h1>
             <p className="portfolio-intro mx-auto mb-0">{t('portfolio.intro')}</p>
           </div>
-        </Container>
+        </div>
 
         <Projects showHeading={false} />
       </main>

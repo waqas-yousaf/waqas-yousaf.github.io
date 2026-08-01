@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -14,7 +13,7 @@ function Projects({ showHeading = true }) {
 
   return (
     <section id="projects" className="py-5">
-      <Container>
+      <div className="container-fluid px-3 px-md-5">
         {showHeading ? (
           <h2 className="text-center fw-bold mb-5">
             {t('projects.featuredProjects').replace(t('projects.featuredHighlight'), '').trim()}{' '}
@@ -58,7 +57,7 @@ function Projects({ showHeading = true }) {
             {t('projects.viewMoreGithub')} <MaterialIcon name="arrow_forward" className="ms-2" />
           </Button>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

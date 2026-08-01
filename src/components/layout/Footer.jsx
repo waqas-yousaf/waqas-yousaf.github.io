@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import MaterialIcon from '../common/MaterialIcon';
@@ -49,7 +48,7 @@ function Footer() {
 
   return (
     <footer className={`site-footer${isToolsRoute ? ' site-footer--tools' : ''}`}>
-      <Container fluid={isToolsRoute} className={isToolsRoute ? 'site-footer-container px-3 px-lg-4' : undefined}>
+      <div className={isToolsRoute ? 'container-fluid site-footer-container px-3 px-lg-4' : 'container-fluid px-3 px-md-5'}>
         <Row className="g-4 g-lg-5 site-footer-main">
           <Col lg={4}>
             <LocaleLink to="/" className="site-footer-brand">
@@ -129,7 +128,7 @@ function Footer() {
           </div>
           <p className="site-footer-meta mb-0">{t('footer.builtWith')}</p>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import MaterialIcon from '../common/MaterialIcon';
@@ -14,7 +13,7 @@ function ToolsPreview() {
 
   return (
     <section id="tools" className="py-5 section-tools" aria-labelledby="tools-preview-heading">
-      <Container>
+      <div className="container-fluid px-3 px-md-5">
         <div className="text-center mb-5">
           <p className="text-black fw-semibold text-uppercase small mb-2">{t('toolsPreview.eyebrow')}</p>
           <h2 id="tools-preview-heading" className="display-6 fw-bold mb-3 text-primary">
@@ -40,7 +39,7 @@ function ToolsPreview() {
             {t('toolsPreview.openOnWishdd')}
           </Button>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

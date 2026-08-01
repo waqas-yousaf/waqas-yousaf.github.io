@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -175,7 +174,7 @@ function OpensourcePage() {
       />
 
       <main className="opensource-page page-top-offset">
-        <Container className="py-4">
+        <div className="container-fluid px-3 px-md-5 py-4">
           <nav aria-label="Breadcrumb" className="opensource-breadcrumb mb-4">
             <LocaleLink to="/" className="opensource-back-link">
               <MaterialIcon name="arrow_back" />
@@ -267,7 +266,7 @@ function OpensourcePage() {
                 const themeClass = getThemeClass(pkg.id);
                 const packageIcon = getPackageIcon(pkg.id);
                 return (
-                  <Col key={pkg.id} xs={12} md={6} lg={4} className="d-flex">
+                  <Col key={pkg.id} xs={12} md={6} lg={6} className="d-flex">
                     <Card className={`package-card ${themeClass} border-0 h-100 w-100 d-flex flex-column`}>
                       <div className="package-card-header-band" />
                       <Card.Body className="p-4 d-flex flex-column h-100">
@@ -390,7 +389,7 @@ function OpensourcePage() {
               })}
             </Row>
           )}
-        </Container>
+        </div>
       </main>
     </>
   );

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import MaterialIcon from '../common/MaterialIcon';
@@ -30,7 +29,7 @@ function Skills() {
     <section id="skills" className="skills-section py-5">
       <div className="skills-section-bg" aria-hidden="true" />
 
-      <Container className="skills-section-inner">
+      <div className="container-fluid skills-section-inner px-3 px-md-5">
         <div className="text-center mb-5">
           <p className="skills-eyebrow text-uppercase small fw-semibold mb-2">{t('skills.eyebrow')}</p>
           <h2 className="display-6 fw-bold mb-3">
@@ -100,7 +99,7 @@ function Skills() {
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

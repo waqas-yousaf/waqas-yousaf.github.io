@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from 'react-bootstrap/Container';
 import MaterialIcon from '../common/MaterialIcon';
 import LocaleLink from '../common/LocaleLink';
 
@@ -31,7 +30,7 @@ function LegalPageLayout({ eyebrow, title, intro, sections }) {
 
   return (
     <main className="legal-page page-top-offset">
-      <Container className="py-5" style={{ maxWidth: 860 }}>
+      <div className="container-fluid px-3 px-md-5 py-5" style={{ maxWidth: 860, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" className="legal-breadcrumb mb-4">
           <LocaleLink to="/" className="legal-back-link">
             <MaterialIcon name="arrow_back" />
@@ -48,7 +47,7 @@ function LegalPageLayout({ eyebrow, title, intro, sections }) {
             <LegalSection key={section.title} section={section} />
           ))}
         </div>
-      </Container>
+      </div>
     </main>
   );
 }
