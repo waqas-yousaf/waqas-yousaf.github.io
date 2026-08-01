@@ -5299,83 +5299,368 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
   color: var(--accent-color);;
 }
 
+/* ── Open Source Packages Page & Card Styles ── */
+
+.opensource-filter-wrapper {
+  margin-bottom: 2.5rem;
+  background: #ffffff;
+  border: 4px solid #121212;
+  box-shadow: 8px 8px 0px 0px #121212;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.opensource-search-box {
+  position: relative;
+  width: 100%;
+}
+
+.opensource-search-input {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #121212;
+  background: #ffffff;
+  border: 3px solid #121212;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: all 0.2s ease;
+}
+
+.opensource-search-input:focus {
+  outline: none;
+  box-shadow: 5px 5px 0px 0px var(--accent-color);
+  background: #ffffff;
+}
+
+.opensource-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #121212;
+  font-weight: bold;
+}
+
+.opensource-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.opensource-filter-btn {
+  background: #ffffff;
+  color: #121212;
+  border: 3px solid #121212;
+  box-shadow: 4px 4px 0px 0px #121212;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.opensource-filter-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #121212;
+}
+
+.opensource-filter-btn:active,
+.opensource-filter-btn.active {
+  background: var(--tertiary-color); /* Bauhaus Yellow default */
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #121212;
+}
+
+.opensource-filter-btn.filter-php.active {
+  background: var(--secondary-color); /* Bauhaus Blue */
+  color: #ffffff;
+}
+
+.opensource-filter-btn.filter-node.active {
+  background: var(--accent-color); /* Bauhaus Red */
+  color: #ffffff;
+}
+
+.opensource-empty-state {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  background: #ffffff;
+  border: 4px solid #121212;
+  box-shadow: 8px 8px 0px 0px #121212;
+  margin-top: 2rem;
+}
+
+.opensource-empty-icon {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Amazing Neobrutalist Package Cards */
 .package-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 4px solid #121212 !important;
+  border-radius: 0px !important;
+  box-shadow: 8px 8px 0px 0px #121212 !important;
+  background: #ffffff !important;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  overflow: hidden;
 }
 
 .package-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 8px 8px 0 var(--accent);
+  transform: translate(-5px, -5px) !important;
+}
+
+.package-card.theme-red:hover {
+  box-shadow: 13px 13px 0px 0px var(--accent-color) !important;
+}
+
+.package-card.theme-blue:hover {
+  box-shadow: 13px 13px 0px 0px var(--secondary-color) !important;
+}
+
+.package-card.theme-yellow:hover {
+  box-shadow: 13px 13px 0px 0px var(--tertiary-color) !important;
+}
+
+.package-card-header-band {
+  height: 12px;
+  width: 100%;
+  border-bottom: 4px solid #121212;
+}
+
+.package-card.theme-red .package-card-header-band {
+  background-color: var(--accent-color);
+}
+
+.package-card.theme-blue .package-card-header-band {
+  background-color: var(--secondary-color);
+}
+
+.package-card.theme-yellow .package-card-header-band {
+  background-color: var(--tertiary-color);
 }
 
 .package-tech-badges .badge {
   font-size: 0.78rem;
-  font-weight: 500;
-  padding: 0.35rem 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0px;
+  border: 2px solid #121212 !important;
+  box-shadow: 2px 2px 0px 0px #121212;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.package-tech-badges .badge:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #121212;
+}
+
+/* Custom stats container */
+.package-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.package-stat-box {
+  background: #ffffff;
+  border: 2px solid #121212;
+  box-shadow: 3px 3px 0px 0px #121212;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.package-stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0px 0px #121212;
+}
+
+.package-stat-box .material-icons {
+  font-size: 1.1rem;
+}
+
+.package-card.theme-red .package-stat-box .material-icons {
+  color: var(--accent-color);
+}
+
+.package-card.theme-blue .package-stat-box .material-icons {
+  color: var(--secondary-color);
+}
+
+.package-card.theme-yellow .package-stat-box .material-icons {
+  color: var(--tertiary-color);
+}
+
+/* Code Editor / Fake Terminal Widget */
 .package-installation-box {
-  background: #0f172a;
-  border-radius: 0.75rem;
-  padding: 0.85rem 1.25rem;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: #18181b !important;
+  border: 3px solid #121212 !important;
+  box-shadow: 4px 4px 0px #121212 !important;
+  border-radius: 0px !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.package-terminal-header {
+  background: #27272a;
+  border-bottom: 3px solid #121212;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.package-terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.package-terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #121212;
+}
+
+.package-terminal-dot.dot-red { background-color: #ef4444; }
+.package-terminal-dot.dot-yellow { background-color: #f59e0b; }
+.package-terminal-dot.dot-green { background-color: #10b981; }
+
+.package-terminal-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+
+.package-terminal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
   gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .package-installation-code {
   font-family: ui-monospace, 'Cascadia Code', monospace;
   font-size: 0.88rem;
-  color: #38bdf8;
+  color: #38bdf8 !important;
+  font-weight: 600;
   margin: 0;
   white-space: nowrap;
   overflow-x: auto;
 }
 
+.package-installation-code .cmd-prompt {
+  color: #f43f5e;
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
 .package-copy-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #e2e8f0;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.8rem;
-  border-radius: 0.5rem;
+  background: #27272a !important;
+  border: 2px solid #121212 !important;
+  box-shadow: 2px 2px 0px #121212 !important;
+  color: #f4f4f5 !important;
+  padding: 0.4rem 0.8rem !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  border-radius: 0px !important;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  gap: 0.4rem;
+  transition: all 0.15s ease !important;
 }
 
 .package-copy-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 3px 3px 0px #121212 !important;
+  background: #3f3f46 !important;
 }
 
+.package-copy-btn:active {
+  transform: translate(1px, 1px) !important;
+  box-shadow: 1px 1px 0px #121212 !important;
+}
+
+/* Feature List Neobrutalist styling */
 .package-features-list {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .package-features-list li {
   position: relative;
-  padding-left: 1.75rem;
-  margin-bottom: 0.65rem;
-  color: rgba(30, 41, 59, 0.85);
+  padding-left: 1.85rem;
+  margin-bottom: 0.75rem;
+  color: #121212 !important;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .package-features-list li::before {
-  content: "check_circle";
-  font-family: 'Material Icons';
+  content: "check_circle" !important;
+  font-family: 'Material Icons' !important;
   position: absolute;
   left: 0;
-  top: 0.1rem;
-  font-size: 1.15rem;
-  color: #22c55e;
+  top: 0.05rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.package-card.theme-red .package-features-list li::before {
+  color: var(--accent-color);
+}
+
+.package-card.theme-blue .package-features-list li::before {
+  color: var(--secondary-color);
+}
+
+.package-card.theme-yellow .package-features-list li::before {
+  color: var(--tertiary-color);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .package-card,
+  .package-card:hover,
+  .opensource-filter-wrapper,
+  .opensource-search-input,
+  .opensource-filter-btn,
+  .package-tech-badges .badge,
+  .package-stat-box,
+  .package-copy-btn {
+    transform: none !important;
+    box-shadow: 4px 4px 0px 0px #121212 !important;
+    transition: none !important;
+  }
+  .package-card:hover {
+    box-shadow: 8px 8px 0px 0px #121212 !important;
+  }
+  .opensource-filter-btn:active,
+  .opensource-filter-btn.active {
+    box-shadow: 4px 4px 0px 0px #121212 !important;
+  }
 }
 
 /* ── Logo Loop Component ── */

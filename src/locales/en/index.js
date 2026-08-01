@@ -1742,6 +1742,19 @@ export default {
       viewGitHub: 'View on GitHub',
       installCommand: 'Installation',
       featuresTitle: 'Key Features',
+      filters: {
+        all: 'All',
+        phpLaravel: 'PHP & Laravel',
+        nodeTs: 'Node.js & TypeScript',
+        searchPlaceholder: 'Search packages by name, technology, or features...',
+        emptyState: 'No packages found matching your criteria.',
+        clearFilters: 'Clear Filters',
+      },
+      stats: {
+        stars: 'Stars',
+        downloads: 'Downloads',
+        forks: 'Forks',
+      },
       items: {
         dullahan: {
           tagline: 'Lightweight Laravel Headless CMS & Editorial Blog Package',
