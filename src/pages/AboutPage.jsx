@@ -67,13 +67,12 @@ function AboutPage() {
                   src="https://res.cloudinary.com/dowsxszgp/image/upload/waqas-yousaf_nxwbc1"
                   alt={t('about.portraitAlt', { name: SITE_NAME })}
                   className="about-portrait"
-                  width="100%"
+                  width="70%"
                   height="auto"
                   loading="eager"
                   style={{ borderBottom: '4px solid #121212' }}
                 />
-                <div className="p-4">
-                  <h2 className="h6 fw-bold mb-3 text-dark text-uppercase letter-spacing-1">{t('about.connect')}</h2>
+                <div className="p-2">
                   <div className="about-social-links d-flex flex-column gap-2">
                     {socialLinks.map((link) => (
                       <a
@@ -112,7 +111,7 @@ function AboutPage() {
                 <Button as={LocaleLink} to={PORTFOLIO_PATH} variant="outline-primary" className="rounded-pill px-4 py-2 fw-bold">
                   {t('about.viewPortfolio')}
                 </Button>
-                <Button as={LocaleLink} to={TOOLS_PATH} variant="secondary" className="rounded-pill px-4 py-2 fw-bold">
+                <Button as={LocaleLink} to={TOOLS_PATH} variant="outline-secondary" className=" rounded-pill px-4 py-2 fw-bold">
                   {t('about.exploreTools')}
                 </Button>
               </div>

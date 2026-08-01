@@ -147,6 +147,35 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s !important;
   padding: 0.6rem 1.5rem !important;
 }
+.btn-outline-secondary{
+  --bs-btn-color: #121212 !important;
+  --bs-btn-border-color: #121212 !important;
+  --bs-btn-hover-bg: var(--secondary-color) !important;
+  --bs-btn-hover-border-color: #121212 !important;
+  --bs-btn-active-bg: var(--secondary-color) !important;
+  --bs-btn-active-border-color: #121212 !important;
+  --bs-btn-hover-color: #121212 !important;
+  --bs-btn-active-color: #121212 !important;
+
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border: 3px solid #121212 !important;
+  border-radius: 0px !important;
+  box-shadow: 4px 4px 0px #121212 !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s !important;
+  padding: 0.6rem 1.5rem !important;
+}
+
+.btn-outline-secondary:hover,.btn-outline-secondary:focus{
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px #121212 !important;
+}
+
+.btn-outline-secondary:active{
+  transform: translate(2px, 2px) !important;
+  box-shadow: 0px 0px 0px #121212 !important;
+}
 
 .btn-outline-primary:hover, .btn-outline-primary:focus, .candy-btn-secondary:hover, .candy-btn-secondary:focus {
   transform: translate(-2px, -2px) !important;
