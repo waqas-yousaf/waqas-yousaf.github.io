@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import PageSeo from '../components/seo/PageSeo';
 import Hero from '../components/sections/Hero';
-import GitHubContributions from '../components/sections/GitHubContributions';
 import CompaniesCarousel from '../components/sections/CompaniesCarousel';
 import ToolsPreview from '../components/sections/ToolsPreview';
 import { SITE_URL, useTools, TOOLS_PATH } from '../data/tools';
@@ -68,7 +67,6 @@ function HomePage() {
         locale={locale}
       />
       <Hero />
-      <GitHubContributions />
       <ToolsPreview />
       <CompaniesCarousel />
     </>

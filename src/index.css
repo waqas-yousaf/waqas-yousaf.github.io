@@ -5794,3 +5794,137 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
   width: clamp(24px, 8%, 120px);
   background: linear-gradient(to left, var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto, #ffffff)) 0%, rgba(255,255,255,0) 100%);
 }
+
+/* ── Hero GitHub Calendar Card ── */
+.hero-github-card {
+  background: rgba(24, 24, 27, 0.85) !important;
+  border: 4px solid #ffffff !important;
+  box-shadow: 8px 8px 0px 0px var(--accent-color) !important; /* Bauhaus Red shadow */
+  border-radius: 0px !important;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.hero-github-card:hover {
+  transform: translate(-4px, -4px) !important;
+  box-shadow: 12px 12px 0px 0px var(--accent-color) !important;
+}
+
+.hero-github-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-github-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-github-title {
+  font-size: 0.85rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+}
+
+.hero-github-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  color: #22c55e;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-github-status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #22c55e;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.hero-github-calendar {
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hero-github-calendar svg text {
+  fill: rgba(255, 255, 255, 0.7) !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 11px !important;
+}
+
+.hero-github-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-github-text {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.hero-github-username-link {
+  color: var(--tertiary-color) !important; /* Bauhaus Yellow */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-github-username-link:hover {
+  text-decoration: underline !important;
+}
+
+.hero-github-btn {
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 3px 3px 0px 0px #ffffff !important;
+  color: #ffffff !important;
+  padding: 0.4rem 1rem !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.15s ease !important;
+}
+
+.hero-github-btn:hover {
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 4px 4px 0px 0px #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.hero-github-btn:active {
+  transform: translate(1px, 1px) !important;
+  box-shadow: 1px 1px 0px 0px #ffffff !important;
+}

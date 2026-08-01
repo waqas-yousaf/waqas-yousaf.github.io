@@ -267,30 +267,31 @@ function OpensourcePage() {
                 const themeClass = getThemeClass(pkg.id);
                 const packageIcon = getPackageIcon(pkg.id);
                 return (
-                  <Col key={pkg.id} xs={12} lg={10} xl={8}>
-                    <Card className={`package-card ${themeClass} border-0`}>
+                  <Col key={pkg.id} xs={12} md={6} lg={4} className="d-flex">
+                    <Card className={`package-card ${themeClass} border-0 h-100 w-100 d-flex flex-column`}>
                       <div className="package-card-header-band" />
-                      <Card.Body className="p-4 p-md-5">
-                        <div className="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
-                          <div className="d-flex align-items-start gap-3">
-                            <div className="package-icon-container d-none d-sm-flex align-items-center justify-content-center p-2 border border-2 border-dark" style={{ background: '#ffffff', minWidth: '48px', height: '48px' }}>
+                      <Card.Body className="p-4 d-flex flex-column h-100">
+                        {/* Title and Button Section */}
+                        <div className="mb-3">
+                          <div className="d-flex align-items-start gap-3 mb-3">
+                            <div className="package-icon-container d-flex align-items-center justify-content-center p-2 border border-2 border-dark" style={{ background: '#ffffff', minWidth: '48px', height: '48px' }}>
                               <MaterialIcon name={packageIcon} className="fs-3 text-dark" />
                             </div>
-                            <div>
+                            <div className="w-100">
                               <Card.Subtitle className="text-primary small mb-1 fw-semibold">
                                 {pkg.name}
                               </Card.Subtitle>
-                              <Card.Title className="h3 fw-bold mb-2">{pkg.title}</Card.Title>
-                              <p className="lead fs-6 text-secondary mb-0">{pkg.tagline}</p>
+                              <Card.Title className="h4 fw-bold mb-1">{pkg.title}</Card.Title>
                             </div>
                           </div>
-
+                          <p className="lead fs-6 text-secondary mb-3" style={{ minHeight: '3rem' }}>{pkg.tagline}</p>
+                          
                           <Button
                             href={pkg.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             variant="primary"
-                            className="rounded-pill px-4 flex-shrink-0"
+                            className="w-100 rounded-pill py-2"
                           >
                             <MaterialIcon name="code" className="me-2" />
                             {t('packages.viewGitHub')}
@@ -298,7 +299,7 @@ function OpensourcePage() {
                         </div>
 
                         {/* Stats block */}
-                        <div className="package-stats-grid">
+                        <div className="package-stats-grid mb-3">
                           {stats[pkg.id] && (
                             <>
                               <div className="package-stat-box" title={t('packages.stats.stars')}>
@@ -323,7 +324,8 @@ function OpensourcePage() {
                           )}
                         </div>
 
-                        <div className="d-flex flex-wrap gap-2 mb-4 package-tech-badges">
+                        {/* Tech stack badges */}
+                        <div className="d-flex flex-wrap gap-2 mb-3 package-tech-badges">
                           {pkg.techStack.map((tech) => (
                             <Badge key={tech} bg="light" text="dark" className="border border-primary border-opacity-25">
                               {tech}
@@ -331,9 +333,10 @@ function OpensourcePage() {
                           ))}
                         </div>
 
-                        <div className="mb-4">
-                          <h3 className="h6 fw-bold text-dark mb-3">{t('packages.installCommand')}</h3>
-                          <div className="package-installation-box">
+                        {/* Installation Command */}
+                        <div className="mb-3">
+                          <h3 className="h6 fw-bold text-dark mb-2">{t('packages.installCommand')}</h3>
+                          <div className="package-installation-box m-0">
                             <div className="package-terminal-header">
                               <div className="package-terminal-dots">
                                 <span className="package-terminal-dot dot-red"></span>
@@ -344,14 +347,14 @@ function OpensourcePage() {
                                 {pkg.npmPackage ? 'npm' : 'composer'}
                               </span>
                             </div>
-                            <div className="package-terminal-body">
-                              <pre className="package-installation-code">
+                            <div className="package-terminal-body p-2">
+                              <pre className="package-installation-code" style={{ fontSize: '0.75rem' }}>
                                 <span className="cmd-prompt">$</span>
-                                {pkg.npmPackage ? `npm install ${pkg.npmPackage}` : `composer require ${pkg.composerPackage}`}
+                                {pkg.npmPackage ? `npm i ${pkg.npmPackage}` : `composer req ${pkg.composerPackage}`}
                               </pre>
                               <button
                                 type="button"
-                                className="package-copy-btn"
+                                className="package-copy-btn p-1 px-2"
                                 onClick={() => handleCopy(
                                   pkg.id,
                                   pkg.npmPackage ? `npm install ${pkg.npmPackage}` : `composer require ${pkg.composerPackage}`
@@ -359,22 +362,23 @@ function OpensourcePage() {
                                 aria-label="Copy installation command"
                               >
                                 <MaterialIcon name={copiedId === pkg.id ? 'check' : 'content_copy'} />
-                                <span>{copiedId === pkg.id ? 'Copied!' : 'Copy'}</span>
                               </button>
                             </div>
                           </div>
                         </div>
 
-                        <Card.Text className="text-secondary mb-4" style={{ lineHeight: 1.7 }}>
+                        {/* Description */}
+                        <Card.Text className="text-secondary mb-3 flex-grow-1" style={{ lineHeight: 1.6, fontSize: '0.9rem' }}>
                           {pkg.description}
                         </Card.Text>
 
+                        {/* Features */}
                         {pkg.features && pkg.features.length > 0 && (
-                          <div>
-                            <h3 className="h6 fw-bold text-dark mb-3">{t('packages.featuresTitle')}</h3>
+                          <div className="mt-auto pt-2 border-top border-light">
+                            <h3 className="h6 fw-bold text-dark mb-2">{t('packages.featuresTitle')}</h3>
                             <ul className="package-features-list">
                               {pkg.features.map((feature, index) => (
-                                <li key={index}>{feature}</li>
+                                <li key={index} style={{ fontSize: '0.85rem' }}>{feature}</li>
                               ))}
                             </ul>
                           </div>
