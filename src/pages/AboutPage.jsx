@@ -61,57 +61,58 @@ function AboutPage() {
           </nav>
 
           <Row className="g-4 g-lg-5 align-items-start">
-            <Col md={5} lg={5}>
-              <div className="about-portrait-card">
+            <Col md={5} lg={4}>
+              <div className="about-portrait-card glass-card p-0" style={{ overflow: 'hidden' }}>
                 <img
                   src="https://res.cloudinary.com/dowsxszgp/image/upload/waqas-yousaf_nxwbc1"
                   alt={t('about.portraitAlt', { name: SITE_NAME })}
                   className="about-portrait"
-                  width={360}
-                  height={450}
+                  width="100%"
+                  height="auto"
                   loading="eager"
+                  style={{ borderBottom: '4px solid #121212' }}
                 />
+                <div className="p-4">
+                  <h2 className="h6 fw-bold mb-3 text-dark text-uppercase letter-spacing-1">{t('about.connect')}</h2>
+                  <div className="about-social-links d-flex flex-column gap-2">
+                    {socialLinks.map((link) => (
+                      <a
+                        key={link.id}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="about-profile-social-link d-flex align-items-center gap-2 text-decoration-none"
+                      >
+                        <BrandIcon name={link.id} className="text-dark" />
+                        <span className="small fw-bold text-secondary">
+                          {t(`social.${link.id}`)}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </Col>
 
-            <Col md={7} lg={7}>
+            <Col md={7} lg={8}>
               <p className="about-eyebrow text-uppercase small fw-semibold mb-2">{t('about.eyebrow')}</p>
               <h1 className="display-6 fw-bold mb-2">{SITE_NAME}</h1>
-              <p className="lead text-primary mb-4">{tagline}</p>
+              <p className="lead text-primary mb-4 fw-bold">{tagline}</p>
 
               <div className="about-intro mb-4">
-                {aboutIntro.map((paragraph) => (
-                  <p key={paragraph.slice(0, 24)} className="text-secondary mb-3">
+                {aboutIntro.map((paragraph, index) => (
+                  <p key={index} className="text-secondary mb-3 fs-5" style={{ lineHeight: 1.7 }}>
                     {paragraph}
                   </p>
                 ))}
               </div>
 
-              <div className="about-social mb-4">
-                <h2 className="h6 fw-bold mb-3">{t('about.connect')}</h2>
-                <div className="about-social-links">
-                  {socialLinks.map((link) => (
-                    <a
-                      key={link.id}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="about-social-link"
-                      aria-label={t(`social.${link.id}`)}
-                    >
-                      <BrandIcon name={link.id} className="me-2" />
-                      {t(`social.${link.id}`)}
-                    </a>
-                  ))}
-                </div>
-              </div>
-
-              <div className="d-flex flex-wrap gap-2">
-                <ProtectedEmail variant="link" linkClassName="about-social-link about-social-email rounded-pill px-4" />
-                <Button as={LocaleLink} to={PORTFOLIO_PATH} variant="outline-primary" className="rounded-pill px-4">
+              <div className="d-flex flex-wrap gap-3 pt-3 border-top border-light">
+                <ProtectedEmail variant="link" linkClassName="about-email-btn btn btn-primary rounded-pill px-4 py-2 fw-bold" />
+                <Button as={LocaleLink} to={PORTFOLIO_PATH} variant="outline-primary" className="rounded-pill px-4 py-2 fw-bold">
                   {t('about.viewPortfolio')}
                 </Button>
-                <Button as={LocaleLink} to={TOOLS_PATH} variant="primary" className="rounded-pill px-4">
+                <Button as={LocaleLink} to={TOOLS_PATH} variant="secondary" className="rounded-pill px-4 py-2 fw-bold">
                   {t('about.exploreTools')}
                 </Button>
               </div>

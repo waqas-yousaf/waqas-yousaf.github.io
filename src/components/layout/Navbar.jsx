@@ -45,12 +45,11 @@ function SiteNavbar() {
     <header className={`site-navbar-wrapper${isToolsRoute ? ' site-navbar-wrapper--tools' : ''}`}>
       <Navbar
         expand="lg"
-        className="site-navbar glass-nav"
+        className={`site-navbar glass-nav px-3 px-md-5 ${isToolsRoute ? 'site-navbar--tools' : ''}`}
         collapseOnSelect
         expanded={navExpanded}
         onToggle={setNavExpanded}
       >
-        <div className={`container-fluid site-navbar-container${isToolsRoute ? ' site-navbar-container--tools' : ''}`}>
           <Navbar.Brand as={LocaleLink} to="/" className="site-navbar-brand">
             <a class="site-header-brand" href="/" data-discover="true"><span class="material-icons me-2" aria-hidden="true">code</span>Waqas Yousaf</a>
           </Navbar.Brand>
@@ -175,7 +174,6 @@ function SiteNavbar() {
               </div>
             </Nav>
           </Navbar.Collapse>
-        </div>
       </Navbar>
     </header>
   );

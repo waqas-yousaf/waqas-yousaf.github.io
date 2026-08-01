@@ -5928,3 +5928,72 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
   transform: translate(1px, 1px) !important;
   box-shadow: 1px 1px 0px 0px #ffffff !important;
 }
+
+/* ── About Me Enhancements ── */
+.about-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff !important;
+  color: #121212 !important;
+  border: 3px solid #121212 !important;
+  box-shadow: 4px 4px 0px 0px #121212 !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease !important;
+  text-decoration: none;
+}
+
+.about-back-link:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px 0px #121212 !important;
+  color: #121212 !important;
+}
+
+.about-back-link:active {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0px 0px #121212 !important;
+}
+
+.about-profile-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  background: #ffffff;
+  border: 2px solid #121212;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: all 0.15s ease;
+  color: #121212;
+}
+
+.about-profile-social-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px 0px var(--accent-color); /* Bauhaus Red shadow on hover */
+  background: var(--palette-peach);
+  color: #121212;
+}
+
+.about-email-btn {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  border: 3px solid #121212 !important;
+  box-shadow: 4px 4px 0px 0px #121212 !important;
+  transition: all 0.15s ease !important;
+  text-decoration: none;
+}
+
+.about-email-btn:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0px 0px #121212 !important;
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+.about-email-btn:active {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0px 0px #121212 !important;
+}
