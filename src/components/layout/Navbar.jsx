@@ -45,135 +45,135 @@ function SiteNavbar() {
     <header className={`site-navbar-wrapper${isToolsRoute ? ' site-navbar-wrapper--tools' : ''}`}>
       <Navbar
         expand="lg"
-        className={`site-navbar glass-nav px-3 px-md-5 ${isToolsRoute ? 'site-navbar--tools' : ''}`}
+        className={`site-navbar glass-nav py-2 px-3 px-md-5 ${isToolsRoute ? 'site-navbar--tools' : ''}`}
         collapseOnSelect
         expanded={navExpanded}
         onToggle={setNavExpanded}
       >
-          <Navbar.Brand as={LocaleLink} to="/" className="site-navbar-brand">
-            <a class="site-header-brand" href="/" data-discover="true"><span class="material-icons me-2" aria-hidden="true">code</span>Waqas Yousaf</a>
-          </Navbar.Brand>
+        <Navbar.Brand as={LocaleLink} to="/" className="site-navbar-brand">
+          <a class="site-header-brand" href="/" data-discover="true"><span class="material-icons me-2" aria-hidden="true">code</span>Waqas Yousaf</a>
+        </Navbar.Brand>
 
-          <Navbar.Toggle
-            aria-controls="site-nav"
-            aria-expanded={navExpanded}
-            aria-label={navExpanded ? t('nav.closeNavigation') : t('nav.toggleNavigation')}
-            className={`site-navbar-toggle${navExpanded ? ' is-open' : ''}`}
-          >
-            {navExpanded ? (
-              <MaterialIcon name="close" className="site-navbar-toggle-icon" />
-            ) : (
-              <>
-                <span className="site-navbar-toggle-bar" />
-                <span className="site-navbar-toggle-bar" />
-                <span className="site-navbar-toggle-bar" />
-              </>
-            )}
-          </Navbar.Toggle>
+        <Navbar.Toggle
+          aria-controls="site-nav"
+          aria-expanded={navExpanded}
+          aria-label={navExpanded ? t('nav.closeNavigation') : t('nav.toggleNavigation')}
+          className={`site-navbar-toggle${navExpanded ? ' is-open' : ''}`}
+        >
+          {navExpanded ? (
+            <MaterialIcon name="close" className="site-navbar-toggle-icon" />
+          ) : (
+            <>
+              <span className="site-navbar-toggle-bar" />
+              <span className="site-navbar-toggle-bar" />
+              <span className="site-navbar-toggle-bar" />
+            </>
+          )}
+        </Navbar.Toggle>
 
-          <Navbar.Collapse id="site-nav" className="site-navbar-collapse">
-            <Nav className="site-navbar-nav ms-lg-auto align-items-lg-center">
-              <div className="site-navbar-links">
-                <Nav.Link as={LocaleLink} to={ABOUT_PATH} className={navLinkClass(ABOUT_PATH)}>
-                  {t('nav.about')}
-                </Nav.Link>
+        <Navbar.Collapse id="site-nav" className="site-navbar-collapse">
+          <Nav className="site-navbar-nav ms-lg-auto align-items-lg-center">
+            <div className="site-navbar-links">
+              <Nav.Link as={LocaleLink} to={ABOUT_PATH} className={navLinkClass(ABOUT_PATH)}>
+                {t('nav.about')}
+              </Nav.Link>
 
-                <Nav.Link as={LocaleLink} to={PORTFOLIO_PATH} className={navLinkClass(PORTFOLIO_PATH)}>
-                  {t('nav.portfolio')}
-                </Nav.Link>
+              <Nav.Link as={LocaleLink} to={PORTFOLIO_PATH} className={navLinkClass(PORTFOLIO_PATH)}>
+                {t('nav.portfolio')}
+              </Nav.Link>
 
-                <Nav.Link as={LocaleLink} to={OPENSOURCE_PATH} className={navLinkClass(OPENSOURCE_PATH)}>
-                  {t('nav.opensource')}
-                </Nav.Link>
+              <Nav.Link as={LocaleLink} to={OPENSOURCE_PATH} className={navLinkClass(OPENSOURCE_PATH)}>
+                {t('nav.opensource')}
+              </Nav.Link>
 
 
 
-                <NavDropdown
-                  title={
-                    <span className="site-nav-dropdown-title">
-                      <MaterialIcon name="handyman" className="site-nav-icon" />
-                      {t('nav.toolbox')}
-                    </span>
-                  }
-                  id="tools-nav-dropdown"
-                  className={`site-tools-dropdown d-none d-lg-block${isToolsRoute ? ' is-tools-active' : ''}`}
-                  align="end"
-                >
-                  <div className="site-tools-mega-header">
-                    <div>
-                      <p className="site-tools-mega-eyebrow mb-1">{t('nav.developerUtilities')}</p>
+              <NavDropdown
+                title={
+                  <span className="site-nav-dropdown-title">
+                    <MaterialIcon name="handyman" className="site-nav-icon" />
+                    {t('nav.toolbox')}
+                  </span>
+                }
+                id="tools-nav-dropdown"
+                className={`site-tools-dropdown d-none d-lg-block${isToolsRoute ? ' is-tools-active' : ''}`}
+                align="end"
+              >
+                <div className="site-tools-mega-header">
+                  <div>
+                    <p className="site-tools-mega-eyebrow mb-1">{t('nav.developerUtilities')}</p>
+                  </div>
+                  <a href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer" className="site-tools-mega-link">
+                    {t('nav.viewAll')}
+                    <MaterialIcon name="open_in_new" />
+                  </a>
+                </div>
+                <NavDropdown.Divider className="site-tools-mega-divider" />
+                <div className="site-tools-mega-grid">
+                  {Object.entries(toolsByCategory).map(([category, categoryTools]) => (
+                    <div key={category} className="site-tools-mega-group">
+                      <NavDropdown.Header className="site-tools-mega-category">{category}</NavDropdown.Header>
+                      {categoryTools.map((tool) => (
+                        <NavDropdown.Item
+                          href={tool.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          key={tool.id}
+                          className="site-tool-dropdown-item"
+                        >
+                          <MaterialIcon name={tool.icon} className={`site-tool-dropdown-icon ${tool.iconColor || ''}`} />
+                          <span>{tool.title}</span>
+                        </NavDropdown.Item>
+                      ))}
                     </div>
-                    <a href={WISHDD_TOOLS_URL} target="_blank" rel="noopener noreferrer" className="site-tools-mega-link">
-                      {t('nav.viewAll')}
-                      <MaterialIcon name="open_in_new" />
-                    </a>
-                  </div>
-                  <NavDropdown.Divider className="site-tools-mega-divider" />
-                  <div className="site-tools-mega-grid">
-                    {Object.entries(toolsByCategory).map(([category, categoryTools]) => (
-                      <div key={category} className="site-tools-mega-group">
-                        <NavDropdown.Header className="site-tools-mega-category">{category}</NavDropdown.Header>
-                        {categoryTools.map((tool) => (
-                          <NavDropdown.Item
-                            href={tool.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            key={tool.id}
-                            className="site-tool-dropdown-item"
-                          >
-                            <MaterialIcon name={tool.icon} className={`site-tool-dropdown-icon ${tool.iconColor || ''}`} />
-                            <span>{tool.title}</span>
-                          </NavDropdown.Item>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                </NavDropdown>
-              </div>
-
-              <div className="site-navbar-actions">
-                <LanguageSwitcher className="me-2" />
-                <Button
-                  href="https://wa.me/4917683081592"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="site-navbar-hire hire-btn rounded-pill px-4"
-                  variant="primary"
-                >
-                  <MaterialIcon name="chat" className="me-2" />
-                  {t('nav.hireMe')}
-                </Button>
-              </div>
-
-              <div className="site-navbar-tools-mobile d-lg-none">
-
-                <a
-                  href={WISHDD_TOOLS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="site-navbar-tools-all-link"
-                >
-                  <MaterialIcon name="open_in_new" className="me-2" />
-                  {t('nav.browseAllTools')}
-                </a>
-                <p className="site-navbar-tools-label">{t('nav.quickAccess')}</p>
-                <div className="site-navbar-tools-grid">
-                  {tools.map((tool) => (
-                    <a
-                      href={tool.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      key={tool.id}
-                      className="site-tool-mobile-link"
-                    >
-                      <MaterialIcon name={tool.icon} className={`me-2 ${tool.iconColor || ''}`} />
-                      {tool.title}
-                    </a>
                   ))}
                 </div>
+              </NavDropdown>
+            </div>
+
+            <div className="site-navbar-actions">
+              <LanguageSwitcher className="me-2" />
+              <Button
+                href="https://wa.me/4917683081592"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="site-navbar-hire hire-btn rounded-pill px-4"
+                variant="primary"
+              >
+                <MaterialIcon name="chat" className="me-2" />
+                {t('nav.hireMe')}
+              </Button>
+            </div>
+
+            <div className="site-navbar-tools-mobile d-lg-none">
+
+              <a
+                href={WISHDD_TOOLS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="site-navbar-tools-all-link"
+              >
+                <MaterialIcon name="open_in_new" className="me-2" />
+                {t('nav.browseAllTools')}
+              </a>
+              <p className="site-navbar-tools-label">{t('nav.quickAccess')}</p>
+              <div className="site-navbar-tools-grid">
+                {tools.map((tool) => (
+                  <a
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={tool.id}
+                    className="site-tool-mobile-link"
+                  >
+                    <MaterialIcon name={tool.icon} className={`me-2 ${tool.iconColor || ''}`} />
+                    {tool.title}
+                  </a>
+                ))}
               </div>
-            </Nav>
-          </Navbar.Collapse>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </header>
   );

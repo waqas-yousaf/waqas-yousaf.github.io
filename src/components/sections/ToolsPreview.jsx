@@ -9,7 +9,7 @@ import { useTools, TOOLS_PATH, WISHDD_TOOLS_URL } from '../../data/tools';
 function ToolsPreview() {
   const { t } = useTranslation();
   const tools = useTools();
-  const featuredTools = tools.slice(0, 4);
+  const featuredTools = tools.slice(0, 3);
 
   return (
     <section id="tools" className="py-5 section-tools" aria-labelledby="tools-preview-heading">

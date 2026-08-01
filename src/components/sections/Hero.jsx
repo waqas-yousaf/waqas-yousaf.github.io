@@ -45,7 +45,7 @@ function Hero() {
 
       <div className="container-fluid hero-container px-3 px-md-5 py-5">
         <Row className="justify-content-center text-center">
-          <Col lg={8} md={10}>
+          <Col lg={6} md={9}>
             <div className={`hero-copy ${mounted ? 'hero-copy-visible' : ''}`}>
               <h1 className="hero-title hero-stagger" style={{ '--i': 2 }}>
                 {t('hero.greeting')}{' '}

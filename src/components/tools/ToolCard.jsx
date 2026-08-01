@@ -2,10 +2,10 @@ import { useTranslation } from 'react-i18next';
 import Col from 'react-bootstrap/Col';
 import MaterialIcon from '../common/MaterialIcon';
 
-function ToolCard({ tool, colProps = { xs: 12, md: 6, lg: 3 }, variant = 'default' }) {
+function ToolCard({ tool, colProps = { xs: 12, md: 6, lg: 4 }, variant = 'default' }) {
   const { t } = useTranslation();
   const isLanding = variant === 'landing';
-  const visibleFeatures = isLanding ? tool.features.slice(0, 3) : tool.features;
+  const visibleFeatures = isLanding ? tool.features.slice(0, 5) : tool.features;
 
   return (
     <Col {...colProps}>
